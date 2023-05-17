@@ -487,98 +487,35 @@ form {
     width: 60%;
   }
 
-  .panel__1 {
+  .first-panel {
     background-image: url(image/card4.svg);
   }
 
-  .panel__2 {
+  .second-panel {
     background-image: url(image/card2.svg);
   }
 
-  .panel__3 {
-    background-image: url(image/card3.svg);
-  }
-
-  .panel__4 {
-    background-image: url(image/card4.svg);
-  }
-
-  .panel__5 {
-    background-image: url(image/card5.svg);
-  }
-
-  .panel__6 {
+  .thirth-panel {
     background-image: url(image/card6.svg);
   }
 
-  .panel .button-action {
+  .fourth-panel {
+    background-image: url(image/card4.svg);
+  }
+
+  .fifth-panel {
+    background-image: url(image/card5.svg);
+  }
+
+  .sixth-panel {
+    background-image: url(image/card6.svg);
+  }
+
+  .button-action {
     margin-bottom: -6.8rem;
   }
 
-  .panel-mobile-content {
-    display: none;
+  h3 {
+    width: 21rem;
   }
 
-  .panel-desktop-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2.4rem;
-  }
-
-  .panel:hover .panel-container {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-  }
-
-  .panel:hover *:not(:last-child) {
-    opacity: 0;
-  }
-
-  .panel:hover .button-action {
-    margin-bottom: 0;
-    opacity: 1;
-  }
-
-  .section-about-me {
-    background-image: url(image/deskIllistration2.png);
-    background-repeat: no-repeat;
-    background-size: 55rem;
-    background-position: 100% 12rem;
-  }
-
-  .about-me-summary-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3.2rem;
-  }
-
-  .skills-box {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .skill-group {
-    align-items: flex-start;
-  }
-
-  .contact-form-container {
-    flex-direction: row;
-    gap: 4rem;
-  }
-
-  .contact-form-container form {
-    text-align: start;
-  }
-
-  .contact-form-genral {
-    width: 45rem;
-    text-align: start;
-    font-size: 4rem;
-    flex-shrink: 0;
-  }
-
-  .last-line {
-    display: none;
-  }
-}
-
-}
