@@ -425,7 +425,7 @@ form {
     flex-direction: column;
     justify-content: space-between;
     width: 1.2rem;
-    margin-left: 0.3rem;
+    margin-left: -1.5rem;
     margin-top:0 ;
     position: absolute;
     top: 12rem;
@@ -439,13 +439,24 @@ form {
     display: flex;
     align-items: center;
   }
+
+  .panel-text-box {
+    padding-left: 60%;
+    margin-top: 2px;
+  }
   
+  .lang-panel1 {
+    display: none;
+  }
   .line {
     height: 1px;
     width: 100%;
     background-color: #212121;
   }
 
+  .panel-container {
+    width: 100%;
+  }
   .multiple-post-header-img {
     float: left;
     width: 50%;
@@ -465,18 +476,14 @@ form {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+    float: left;
   }
 
-  .work-header-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2.4rem;
+  .panel-mobile-content1 {
+    display: none;
   }
-
-  .work-header {
-    flex-shrink: 0;
-    padding: 0;
+  .work-public-container {
+    padding: 12px;
   }
 
   .multiple-post-panel {
@@ -488,34 +495,30 @@ form {
   }
 
   .first-panel {
-    background-image: url(image/card4.svg);
+    background-image: url(image/ImgPlaceholder1.png);
   }
 
   .second-panel {
-    background-image: url(image/card2.svg);
+    background-image: url(image/ImgPlaceholder2.png);
   }
 
   .thirth-panel {
-    background-image: url(image/card6.svg);
+    background-image: url("image/img1.png");
   }
 
   .fourth-panel {
-    background-image: url(image/card4.svg);
+    background-image: url(image/Img1.png);
   }
 
   .fifth-panel {
-    background-image: url(image/card5.svg);
+    background-image: url(image/ImgPlaceholder2.png);
   }
 
   .sixth-panel {
-    background-image: url(image/card6.svg);
-  }
-
-  .button-action {
-    margin-bottom: -6.8rem;
+    background-image: url(image/ImgPlaceholder3.png);
   }
 
   h3 {
     width: 21rem;
   }
-
+}
