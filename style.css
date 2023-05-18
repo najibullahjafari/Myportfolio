@@ -246,6 +246,9 @@ display: none;
 .section-about-me {
   background-color: #1c1a19;
   padding: 0 1.2rem 3rem 1.2rem;
+  background-image: url("image/illustration-about-me-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 100% 22rem;
 }
 
 .about-me-h2 {
@@ -258,7 +261,6 @@ display: none;
 }
 
 .about-me-summary-box {
-  background-image: url("image/illustration-about-me-mobile.png");
   background-repeat: no-repeat;
   background-position: bottom right;
   border-bottom: 1px solid #fff;
@@ -286,6 +288,7 @@ display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .skill-title {
@@ -309,7 +312,6 @@ display: none;
   color: white;
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  margin: 2.5rem 0;
   display: flex;
   align-items: baseline;
   justify-content: center;
@@ -518,7 +520,75 @@ form {
     background-image: url(image/ImgPlaceholder3.png);
   }
 
-  h3 {
-    width: 21rem;
+  .button-action {
+    display: none;
+  }
+
+  .btn-about {
+    display: flex;
+  }
+
+  .about-me-summary-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-me-description {
+    font-size: 20px;
+  }
+
+  .about-me-cotainer {
+    padding: 0 11rem; 
+  }
+
+  .section-about-me {
+    background-image: url(image/largaboutme.png);
+    background-repeat: no-repeat;
+    background-position: 100% 13rem;
+    background-size: 40rem;
+  }
+
+  .about-me-h2 {
+    text-align: left;
+  }
+
+  .skills-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .skill-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skill-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -32px;
+  }
+
+  .contact-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  .contact-form {
+    padding: 0px;
+    text-align: left;
+  }
+  .form-input {
+    width: 100%;
+  }
+
+  .btn-resume {
+    display: flex;
+  }
+
+  .contact-form-h2 {
+    text-align: left;
   }
 }
