@@ -218,7 +218,7 @@ h3 {
   justify-content: flex-end;
   margin-top: 1.5rem;
   padding: 1px;
-  height: 85vh
+  height: 85vh;
 }
 
 .card-language-con {
@@ -236,7 +236,7 @@ h3 {
 /* == Aboutn me section == */
 
 .pop-nav {
-display: none;
+  display: none;
 }
 
 .section-about-me {
@@ -253,7 +253,7 @@ display: none;
   font-family: "Crete Round", sans-serif;
   font-weight: normal;
   font-size: 4rem;
-  padding: 80px 0px 16px;
+  padding: 80px 16px;
 }
 
 .about-me-summary-box {
@@ -425,7 +425,7 @@ form {
     justify-content: space-between;
     width: 1.2rem;
     margin-left: -1.5rem;
-    margin-top:0 ;
+    margin-top: 0;
     position: absolute;
     top: 12rem;
   }
@@ -533,7 +533,7 @@ form {
   }
 
   .about-me-cotainer {
-    padding: 0 11rem; 
+    padding: 11rem; 
   }
 
   .section-about-me {
@@ -568,7 +568,6 @@ form {
   .contact-form-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
   }
 
   .contact-form {
@@ -587,5 +586,4 @@ form {
   .contact-form-h2 {
     text-align: left;
   }
-
 }
