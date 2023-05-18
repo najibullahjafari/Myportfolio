@@ -32,7 +32,7 @@ h3 {
 }
 
 .logo {
-  margin: 0px 48px;
+  padding-left: 30px;
 }
 
 .hidden-menu {
@@ -40,7 +40,7 @@ h3 {
 }
 
 .menu-icon {
-  margin: 0px 36px;
+  padding-right: 30px;
 }
 
 .menu {
@@ -110,7 +110,7 @@ h3 {
 }
 
 .work-h2 {
-  margin: 96px 0px 48px;
+  margin: 96px 48px;
   color: #1c1a19;
   font-family: "Crete Round", sans-serif;
   font-weight: normal;
@@ -162,9 +162,6 @@ h3 {
   font-size: 1rem;
   list-style: none;
   color: #fff;
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  padding: 0.6rem 0.7rem;
   background: rgba(255, 255, 255, 0.3);
 }
 
@@ -216,13 +213,12 @@ h3 {
   background-image: url(image/cardbackground.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 390px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   margin-top: 1.5rem;
   padding: 1px;
-  height: 85vh;
+  height: 85vh
 }
 
 .card-language-con {
@@ -231,7 +227,7 @@ h3 {
   padding: 0 0 1.5rem 0.6rem;
 }
 
-.multiple-post-panel   {
+.multiple-post-panel {
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -264,7 +260,6 @@ display: none;
   background-repeat: no-repeat;
   background-position: bottom right;
   border-bottom: 1px solid #fff;
-
 }
 
 .about-me-description {
@@ -353,7 +348,7 @@ form {
   flex-direction: column;
   align-items: center;
   border-bottom: 1px solid #dfe1e6;
-  padding: 0 2rem 2rem 2rem
+  padding: 0 2rem 2rem 2rem;
 }
 
 .form-icon {
@@ -374,7 +369,7 @@ form {
 }
 
 .icon {
-  fill: #505f79
+  fill: #505f79;
 }
 
 .form-input {
@@ -385,9 +380,10 @@ form {
   line-height: 1.5rem;
   border-bottom: 1px solid #dbd8d7;
 }
+
 /* ===================================== responsive part break point ============================================  */
+
 @media screen and (min-width: 768px) {
-  
   .cancel-img {
     padding-right: 30px;
   }
@@ -401,6 +397,7 @@ form {
     font-size: 1.5rem;
     font-weight: 600;
     color: #fff;
+    text-decoration: none;
   }
 
   .menu {
@@ -441,15 +438,11 @@ form {
     display: flex;
     align-items: center;
   }
-
-  .panel-text-box {
-    padding-left: 60%;
-    margin-top: 2px;
-  }
   
   .lang-panel1 {
     display: none;
   }
+
   .line {
     height: 1px;
     width: 100%;
@@ -459,6 +452,7 @@ form {
   .panel-container {
     width: 100%;
   }
+
   .multiple-post-header-img {
     float: left;
     width: 50%;
@@ -484,6 +478,7 @@ form {
   .panel-mobile-content1 {
     display: none;
   }
+
   .work-public-container {
     padding: 12px;
   }
@@ -580,6 +575,7 @@ form {
     padding: 0px;
     text-align: left;
   }
+
   .form-input {
     width: 100%;
   }
@@ -591,4 +587,5 @@ form {
   .contact-form-h2 {
     text-align: left;
   }
+
 }
