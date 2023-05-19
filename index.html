@@ -41,9 +41,9 @@
         <img class="menu-icon" id="hamburguer-menu" src="image/menu.png" alt="menu icon">
       </a>
       <ul class="menu">
-        <li class="hidden-item"><a href="#portfolio"> Portfolio</a></li>
-        <li class="hidden-item"><a href="#about-me-section">About</a></li>
-        <li class="hidden-item"><a href="#contact-part">Contact</a></li>
+        <li class="hidden-item1"><a href="#portfolio"> Portfolio</a></li>
+        <li class="hidden-item1"><a href="#about-me-section">About</a></li>
+        <li class="hidden-item1"><a href="#contact-part">Contact</a></li>
         <li class="mail"><a href="#contact-part"><img src="image/mail.png" alt="Mail icon"></a></li>
       </ul>
     </nav>
@@ -99,7 +99,7 @@
 
 <!-- ========= Work section =========== -->
 
-  <section class="section-work ">
+  <section class="section-work " id="projectSection">
     <div class="work-public-oontainer">
       <div class="work-container">
         <h2 class="work-h2 ">My Recent Works</h2>
@@ -113,13 +113,13 @@
         <p class="multiple-post-description">
           A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
         </p>
-        <ul class="work-lanaguage flex">
+        <ul class="work-lanaguage ">
           <li class="work-first-lang"><span>CSS</span></li>
           <li class="work-first-lang"><span>HTML</span></li>
           <li class="work-first-lang"><span>Bootstrap</span></li>
           <li class="work-first-lang"><span>Ruby</span></li>
         </ul>
-        <button class="button-action-first">See project</d></button>
+        <button class="button-action-first " id="overlayButton">See project</d></button>
       </div>
       <div class="card-container">
         <div class="panel-container first-panel">
@@ -132,7 +132,7 @@
             <li class="work-lang-box"><span>Bootstrap</span></li>
             <li class="work-lang-box"><span>Ruby</span></li>
           </ul>
-          <a href="#" class="button-action">See project</a>
+          <a href="#" class="button-action" id="overlayButton">See project</a>
         </div>
         <div class="panel-container second-panel">
           <div class="panel-mobile-content">
@@ -144,7 +144,7 @@
             <li class="work-lang-box"><span>Bootstrap</span></li>
             <li class="work-lang-box"><span>Ruby</span></li>
           </ul>
-          <a href="#" class="button-action">See project</a>
+          <a href="#" class="button-action" id="overlayButton">See project</a>
         </div>
         <div class="panel-container tirth-panel ">
           <div class="panel-mobile-content">
@@ -156,7 +156,7 @@
             <li class="work-lang-box"><span>Bootstrap</span></li>
             <li class="work-lang-box"><span>Ruby</span></li>
           </ul>
-          <a href="#" class="button-action">See project</a>
+          <a href="#" class="button-action" id="overlayButton">See project</a>
         </div>
         <div class="panel-container fourth-panel">
           <div class="panel-mobile-content">
@@ -168,7 +168,7 @@
             <li class="work-lang-box"><span>Bootstrap</span></li>
             <li class="work-lang-box"><span>Ruby</span></li>
           </ul>
-          <a href="#" class="button-action">See project</a>
+          <a href="#" class="button-action" id="overlayButton">See project</a>
         </div>
         <div class="panel-container fifth-panel">
           <div class="panel-mobile-content">
@@ -180,7 +180,7 @@
             <li class="work-lang-box"><span>Bootstrap</span></li>
             <li class="work-lang-box"><span>Ruby</span></li>
           </ul>
-          <a href="#" class="button-action">See project</a>
+          <a href="#" class="button-action" id="overlayButton">See project</a>
         </div>
         <div class="panel-container sixth-panel">
           <div class="panel-mobile-content">
@@ -192,14 +192,28 @@
             <li class="work-lang-box"><span>Bootstrap</span></li>
             <li class="work-lang-box"><span>Ruby</span></li>
           </ul>
-          <a href="#" class="button-action">See project</a>
+          <a href="#" class="button-action" id="overlayButton">See project</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- =========== About me section ============ -->
+<!--Here html for pop up window  -->
 
+  <div id="overlay">
+    <div id="overlayContent">
+      <button id="closeButton">X</button>
+      <h2 id="projectName"></h2>
+      <img id="projectImage" src="" alt="">
+      <p id="projectDescription"></p>
+      <p id="projectTechnologies"></p>
+      <a id="liveLink" href="" target="_blank">Live Version</a>
+      <a id="sourceLink" href="" target="_blank">Source Code</a>
+    </div>
+  </div>
+
+  <!-- =========== About me section ============ -->
+  
   <section id="#aboutMe" class="section-about-me genral-padding">
     <!-- <div class="pop-nav">
       <div class="pop-header">

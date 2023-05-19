@@ -16,19 +16,65 @@ h3 {
   margin: 20px;
 }
 
-.genral-flex {
-  display: flex;
+/* ========== Mobile hidden menu ========= */
+#hidden-menu {
+  display: none;
+  background-color: #3c3a39;
+  width: 98%;
+  height: 97vh;
+  position: fixed;
 }
 
-.genral-grid {
-  display: grid;
+.hidden-item {
+  border-bottom: thin solid gainsboro;
+  padding: 0 0 1.5rem 1rem;
 }
+
+.hidden-item a {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  list-style: none;
+}
+
+.hidden-item-con {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 1rem;
+  color: white;
+}
+
+.hidden-item-con a {
+  text-decoration: none;
+}
+
+.cancel {
+  margin-top: 0;
+  margin-right: 0;
+}
+
+.cancel-img {
+  display: block;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.cancel-img:hover {
+  cursor: pointer;
+}
+
+/* ============== Header part ========== */
 
 .navbar-con {
   background-color: #3c3a39;
-  padding: 1.2rem 0;
+  padding-top: 10px;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 12px;
 }
 
 .logo {
@@ -144,6 +190,9 @@ h3 {
   display: flex;
   gap: 0.6rem;
   margin-top: 1rem;
+  align-items: flex-start;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .work-first-lang {
@@ -181,18 +230,28 @@ h3 {
   scroll-behavior: smooth;
 }
 
+.button-action-first:hover {
+  background: #fff5e1;
+  color: #f55800;
+}
+
 .button-action {
   background-color: #fc6703;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   color: #fff;
-  border: none;
   font-size: 1.1rem;
   padding: 0.7rem;
   scroll-behavior: smooth;
-  display: flex;
   text-align: center;
   justify-content: center;
+  text-decoration: none;
+  border: none;
+}
+
+.button-action:hover {
+  background: #fff5e1;
+  color: #f55800;
 }
 
 .work-public-container {
@@ -241,10 +300,10 @@ h3 {
 
 .section-about-me {
   background-color: #1c1a19;
-  padding: 0 1.2rem 3rem 1.2rem;
+  padding: 0 1.2rem 2rem 1.2rem;
   background-image: url("image/illustration-about-me-mobile.png");
   background-repeat: no-repeat;
-  background-position: 100% 22rem;
+  background-position: 100% 27%;
 }
 
 .about-me-h2 {
@@ -267,10 +326,11 @@ h3 {
   font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
   line-height: 1.5rem;
+  padding-bottom: 30px;
 }
 
 .btn-resume {
-  margin: 1rem 0 12rem 0;
+  margin: -1rem 0 4rem 0;
   border: none;
 }
 
@@ -335,7 +395,7 @@ h3 {
 .contact-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   border-bottom: 1px solid #dfe1e6;
   padding: 0 2rem 2rem 2rem;
   margin-top: 3rem;
@@ -346,7 +406,7 @@ h3 {
 form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   border-bottom: 1px solid #dfe1e6;
   padding: 0 2rem 2rem 2rem;
 }
@@ -394,7 +454,7 @@ form {
 
   .menu a {
     font-family: "Inter", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #fff;
     text-decoration: none;
@@ -433,10 +493,11 @@ form {
   .work-container {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    margin: 6rem;
-    width: 100%;
+    margin: -1rem;
+    width: 97%;
     display: flex;
     align-items: center;
+    padding-right: 30px;
   }
 
   .lang-panel1 {
@@ -464,6 +525,9 @@ form {
     margin-top: 2px;
   }
 
+  .button-action-first {
+    display: flex;
+  }
   .work-h2 {
     border-bottom: none;
   }
@@ -515,8 +579,8 @@ form {
     background-image: url(image/ImgPlaceholder3.png);
   }
 
-  .button-action {
-    display: none;
+  .button-action :hover {
+    display: flex;
   }
 
   .btn-about {
@@ -539,7 +603,7 @@ form {
   .section-about-me {
     background-image: url(image/largaboutme.png);
     background-repeat: no-repeat;
-    background-position: 100% 13rem;
+    background-position: 100% 9rem;
     background-size: 40rem;
   }
 
@@ -568,10 +632,12 @@ form {
   .contact-form-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-left: 150px;
+    padding-right: 150px;
   }
 
   .contact-form {
-    text-align: left;
+    text-align: start;
   }
 
   .form-input {
@@ -585,4 +651,51 @@ form {
   .contact-form-h2 {
     text-align: left;
   }
+
+  .hidden-menu {
+    display: none;
+  }
 }
+
+/* overlay stylesheet */
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+#overlayContent {
+  background-color: white;
+  width: 80%;
+  height: auto;
+  max-width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  text-align: center;
+}
+
+#closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  #overlayContent {
+    width: 90%;
+  }
+}
+
