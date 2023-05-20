@@ -63,10 +63,11 @@
 
 .navbar-con {
   background-color: #3c3a39;
-  padding-top: 10px;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 12px;
+  height: 9vh;
+  align-items: center;
+  align-content: center;
 }
 
 .logo {
@@ -121,7 +122,7 @@
 }
 
 .headline-container {
-  padding-left: 40px;
+  padding-left: 60px;
 }
 
 .social-icon {
@@ -276,7 +277,6 @@
 }
 
 .multiple-post-description-first {
-  width: 448px;
   height: 140px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -355,6 +355,11 @@
   justify-content: center;
   text-decoration: none;
   border: none;
+}
+
+.btn-resume:hover {
+  background: #fff5e1;
+  color: #f55800;
 }
 
 .about-text-box {
@@ -469,6 +474,11 @@ form {
 @media screen and (min-width: 768px) {
   .cancel-img {
     padding-right: 30px;
+  }
+
+  .headline-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .menu-icon {
