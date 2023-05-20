@@ -591,7 +591,7 @@ form {
   .panel-container:hover a {
     display: flex;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
     opacity: 1;
     pointer-events: initial;
@@ -600,7 +600,7 @@ form {
   .button-action-first-card {
     display: flex;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
     opacity: 1;
     background-color: #fc6703;
