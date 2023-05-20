@@ -352,7 +352,16 @@
 }
 
 .btn-resume {
-  margin: -1rem 0 4rem 0;
+  background-color: #fc6703;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0.7rem;
+  scroll-behavior: smooth;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
   border: none;
 }
 
@@ -696,7 +705,11 @@ form {
   }
 
   .about-me-description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
     font-size: 20px;
+    line-height: 32px;
   }
 
   .about-me-cotainer {
@@ -706,7 +719,7 @@ form {
   .section-about-me {
     background-image: url(image/largaboutme.png);
     background-repeat: no-repeat;
-    background-position: 100% 9rem;
+    background-position: 100%  8rem;
     background-size: 40rem;
   }
 
