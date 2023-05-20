@@ -43,6 +43,7 @@ h3 {
   flex-direction: column;
   gap: 20px;
   width: 100%;
+  height: 100%;
   padding: 1rem;
   color: white;
 }
