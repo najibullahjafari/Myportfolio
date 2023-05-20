@@ -313,10 +313,9 @@
 
 .section-about-me {
   background-color: #1c1a19;
-  padding: 0 1.2rem 2rem 1.2rem;
   background-image: url("image/illustration-about-me-mobile.png");
   background-repeat: no-repeat;
-  background-position: 100% 27%;
+  background-position: 100% 20rem;
 }
 
 .about-me-h2 {
@@ -325,13 +324,13 @@
   font-family: "Crete Round", sans-serif;
   font-weight: normal;
   font-size: 4rem;
-  padding: 80px 16px;
 }
 
 .about-me-summary-box {
   background-repeat: no-repeat;
   background-position: bottom right;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px #fff solid;
+  padding-bottom: 8rem;
 }
 
 .about-me-description {
@@ -363,13 +362,12 @@
 
 .about-text-box {
   padding: 40px;
+  padding-top: 7rem;
 }
 
 .skills-group {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin-top: 30px;
 }
 
@@ -384,10 +382,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
   color: white;
   font-family: "Inter", sans-serif;
   font-size: 1.3rem;
+  padding: 12px;
+  gap: 24px;
 }
 
 .skills-title-box {
@@ -711,14 +710,16 @@ form {
   }
 
   .about-me-cotainer {
-    padding: 11rem;
+    width: 100%;
   }
 
   .section-about-me {
     background-image: url(image/largaboutme.png);
     background-repeat: no-repeat;
-    background-position: 100%  8rem;
+    background-position: 100%  12rem;
     background-size: 40rem;
+    width: 100%;
+    padding-bottom: 60px;
   }
 
   .about-me-h2 {
@@ -728,6 +729,7 @@ form {
   .skills-group {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 3rem;
   }
 
   .skill-group {
@@ -739,8 +741,8 @@ form {
   .skill-ul {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: -32px;
+    gap: 24px;
+    align-items: start;
   }
 
   .contact-form-container {
