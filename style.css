@@ -7,15 +7,6 @@
   border: none;
 }
 
-h3 {
-  font-family: "Crete Round", sans-serif;
-  color: #fff;
-  font-weight: normal;
-  font-size: 2rem;
-  padding: 0 0 1.2rem 0.6rem;
-  margin: 20px;
-}
-
 /* ========== Mobile hidden menu ========= */
 #hidden-menu {
   display: none;
@@ -150,7 +141,7 @@ h3 {
 /* Section project and works */
 
 .section-work {
-  padding: 0 4rem 6rem 4rem;
+  padding: 0 2rem 6rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -173,7 +164,7 @@ h3 {
 
 .multiple-post-genral {
   font-family: "Crete Round", sans-serif;
-  color: #091e42;
+  color: #ffffff;
   font-weight: normal;
   font-size: 2rem;
   padding: 1.5rem 0 1rem 0;
@@ -203,6 +194,27 @@ h3 {
   padding: 0.6rem 0.7rem;
   display: inline;
   font-size: 1rem;
+}
+
+.work-genral-header {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
+  padding-top: 12px;
+  padding-left: 20px;
+}
+
+.work-genral-header-first {
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #091e42;
+  width: 100%;
 }
 
 .work-lang-box {
@@ -261,30 +273,39 @@ h3 {
   gap: 3rem;
 }
 
-.panel-description {
-  color: #fff;
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  padding: 0 0 0.6rem 0.6rem;
+.multiple-post-description {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 24px;
+}
+
+.multiple-post-description-first {
+  width: 448px;
+  height: 140px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .panel-container {
-  background-image: url(image/cardbackground.png);
+  background-image:linear-gradient(179.4deg, rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.9) 84.03%), url(image/cardbackground.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   margin-top: 1.5rem;
-  padding: 1px;
-  height: 85vh;
 }
 
 .card-language-con {
-  display: flex;
-  gap: 1rem;
-  padding: 0 0 1.5rem 0.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
 }
 
 .multiple-post-panel {
@@ -492,13 +513,19 @@ form {
   }
 
   .work-container {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
     margin: -1rem;
-    width: 97%;
     display: flex;
     align-items: center;
-    padding-right: 30px;
+  }
+
+  .section-work {
+    padding: 6rem;
+  }
+
+  .work-first-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
 
   .lang-panel1 {
@@ -513,12 +540,14 @@ form {
 
   .panel-container {
     width: 100%;
+    position: relative;
+    height: 60vh;
+    align-items: end;
   }
 
   .multiple-post-header-img {
     float: left;
-    width: 50%;
-    padding-top: 30px;
+    width: 100%;
   }
 
   .panel-text-box {
@@ -528,6 +557,71 @@ form {
 
   .button-action-first {
     display: flex;
+  }
+
+  .button-action {
+    display: none;
+  }
+
+  .panel-container p,
+  .panel-container ul,
+  .panel-container h3 {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+
+  .panel-container:hover h3,
+  .panel-container:hover p,
+  .panel-container:hover ul {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+    opacity: 1;
+  }
+
+  .panel-container:hover a {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    opacity: 1;
+    pointer-events: initial;
+  }
+
+  .button-action-first-card {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    opacity: 1;
+    background-color: #fc6703;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0.7rem;
+    scroll-behavior: smooth;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+  }
+
+  .button-action-first-card:hover {
+    color: #f55800;
+    background: #fff5e1;
+  }
+
+  .first-panel p,
+  .first-panel ul,
+  .first-panel h3 {
+    display: none;
+  }
+
+  .button-action {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
   }
 
   .work-h2 {
@@ -541,10 +635,6 @@ form {
     float: left;
   }
 
-  .panel-mobile-content1 {
-    display: none;
-  }
-
   .work-public-container {
     padding: 12px;
   }
@@ -553,6 +643,17 @@ form {
     flex-direction: row;
   }
 
+  .card-language-con {
+    position: absolute;
+    bottom: 12%;
+    padding-left: 12px;
+  }
+
+  .multiple-post-description {
+    position: absolute;
+    bottom: 24%;
+    padding-left: 12px;
+  }
   .panel-img-box {
     width: 60%;
   }
