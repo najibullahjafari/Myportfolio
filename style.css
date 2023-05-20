@@ -529,6 +529,7 @@ form {
   .button-action-first {
     display: flex;
   }
+
   .work-h2 {
     border-bottom: none;
   }
@@ -699,4 +700,3 @@ form {
     width: 90%;
   }
 }
-
