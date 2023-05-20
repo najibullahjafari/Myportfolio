@@ -164,7 +164,7 @@
 
 .multiple-post-genral {
   font-family: "Crete Round", sans-serif;
-  color: #ffffff;
+  color: #fff;
   font-weight: normal;
   font-size: 2rem;
   padding: 1.5rem 0 1rem 0;
@@ -174,8 +174,12 @@
 .multiple-post-description {
   font-family: "Inter", sans-serif;
   color: #091e42;
-  font-size: 1.3rem;
-  line-height: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  padding: 24px;
 }
 
 .work-lanaguage {
@@ -202,13 +206,13 @@
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  color: #ffffff;
+  color: #fff;
   padding-top: 12px;
   padding-left: 20px;
 }
 
 .work-genral-header-first {
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -273,20 +277,10 @@
   gap: 3rem;
 }
 
-.multiple-post-description {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 24px;
-  color: #ffffff;
-  padding: 24px;
-}
-
 .multiple-post-description-first {
   width: 448px;
   height: 140px;
-  font-family: 'Inter';
+  font-family: 'Inter',sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -294,7 +288,7 @@
 }
 
 .panel-container {
-  background-image:linear-gradient(179.4deg, rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.9) 84.03%), url(image/cardbackground.png);
+  background-image: linear-gradient(179.4deg, rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.9) 84.03%), url(image/cardbackground.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -570,6 +564,9 @@ form {
 
   .button-action {
     display: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
   }
 
   .panel-container p,
@@ -579,10 +576,15 @@ form {
     transition: opacity 0.5s ease;
   }
 
+  .first-panel p,
+  .first-panel ul,
+  .first-panel h3 {
+    display: none;
+  }
+
   .panel-container:hover h3,
   .panel-container:hover p,
   .panel-container:hover ul {
-    opacity: 0;
     pointer-events: none;
     display: none;
     opacity: 1;
@@ -621,18 +623,6 @@ form {
     background: #fff5e1;
   }
 
-  .first-panel p,
-  .first-panel ul,
-  .first-panel h3 {
-    display: none;
-  }
-
-  .button-action {
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.5s ease;
-  }
-
   .work-h2 {
     border-bottom: none;
   }
@@ -663,6 +653,7 @@ form {
     bottom: 24%;
     padding-left: 12px;
   }
+
   .panel-img-box {
     width: 60%;
   }
