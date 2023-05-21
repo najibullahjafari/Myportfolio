@@ -129,7 +129,7 @@ function addhtml() {
             <li class="work-lang-box"><span>Bootstrap</span></li>
             <li class="work-lang-box"><span>Ruby</span></li>
           </ul>
-          <a href="#" class="button-action" id="overlayButton">See project</a>
+          <a href="#" class="button-action btn-project" id="overlayButton">See project</a>
         </div>
         <div class="panel-container tirth-panel ">
           <div class="panel-mobile-content">
@@ -181,7 +181,7 @@ function addhtml() {
             <li class="work-lang-box"><span>Bootstrap</span></li>
             <li class="work-lang-box"><span>Ruby</span></li>
           </ul>
-          <a href="#" class="button-action btn-project" id="overlayButton">See project</a>
+          <button href="#" class="button-action btn-project" id="overlayButton">See project</button>
         </div>
       </div>
     </div>
