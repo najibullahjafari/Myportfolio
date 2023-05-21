@@ -573,6 +573,10 @@ form {
     display: flex;
   }
 
+  .work-lang-box {
+    padding: 1.6000000000000014rem 1.6999999999999993rem;
+  }
+
   .button-action {
     display: none;
     opacity: 0;
