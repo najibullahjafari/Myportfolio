@@ -88,7 +88,7 @@
 
 .headline-intro {
   background-color: #1c1a19;
-  background-image: url("image/illustration-header-mobile.png");
+  background-image: url('image/illustration-header-mobile.png');
   background-repeat: no-repeat;
   background-position: 100% 130%;
   padding: 0 1.2rem 6rem 1.2rem;
@@ -96,23 +96,25 @@
 
 .headline-h1 {
   color: #ff6b00;
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-weight: normal;
-  font-size: 3.5rem;
+  font-size: 5rem;
   padding-top: 5rem;
 }
 
 .headline-description {
   color: white;
-  font-family: "Poppins", sans-serif;
-  font-size: 0.9rem;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem !important;
 }
 
 .headline-support {
   color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.4rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.4rem;
   padding: 1rem 0 1rem 0;
 }
 
@@ -151,7 +153,7 @@
 .work-h2 {
   margin: 96px 48px;
   color: #1c1a19;
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-weight: normal;
   font-size: 2.3rem;
   text-align: center;
@@ -164,7 +166,7 @@
 }
 
 .multiple-post-genral {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   color: #fff;
   font-weight: normal;
   font-size: 2rem;
@@ -173,7 +175,7 @@
 }
 
 .multiple-post-description {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 24px;
@@ -192,7 +194,7 @@
 
 .work-first-lang {
   border: 1px solid #8993a4;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #091e42;
   padding: 0.6rem 0.7rem;
   display: inline;
@@ -221,7 +223,7 @@
 }
 
 .work-lang-box {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   padding: 0.6rem 0.7rem;
   display: inline;
   font-size: 1rem;
@@ -236,7 +238,7 @@
 
 .button-action-first {
   background-color: #fc6703;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   color: #fff;
   border: none;
@@ -253,7 +255,7 @@
 
 .button-action {
   background-color: #fc6703;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   color: #fff;
   font-size: 1.1rem;
@@ -285,7 +287,12 @@
 }
 
 .panel-container {
-  background-image: linear-gradient(179.4deg, rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.9) 84.03%), url(image/cardbackground.png);
+  background-image: linear-gradient(
+      179.4deg,
+      rgba(38, 38, 38, 0) 0.81%,
+      rgba(38, 38, 38, 0.9) 84.03%
+    ),
+    url(image/cardbackground.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -313,7 +320,7 @@
 
 .section-about-me {
   background-color: #1c1a19;
-  background-image: url("image/illustration-about-me-mobile.png");
+  background-image: url('image/illustration-about-me-mobile.png');
   background-repeat: no-repeat;
   background-position: 100% 20rem;
 }
@@ -321,7 +328,7 @@
 .about-me-h2 {
   text-align: center;
   color: #ff6b00;
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-weight: normal;
   font-size: 4rem;
 }
@@ -335,7 +342,7 @@
 
 .about-me-description {
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.9rem;
   line-height: 1.5rem;
   padding-bottom: 30px;
@@ -343,7 +350,7 @@
 
 .btn-resume {
   background-color: #fc6703;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   color: #fff;
   font-size: 1.1rem;
@@ -373,7 +380,7 @@
 
 .skill-title {
   color: white;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   margin: 3rem 0;
 }
@@ -383,7 +390,7 @@
   flex-direction: column;
   align-items: center;
   color: white;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.3rem;
   padding: 12px;
   gap: 24px;
@@ -391,11 +398,12 @@
 
 .skills-title-box {
   color: white;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   display: flex;
   align-items: baseline;
   justify-content: center;
+  gap: 12px;
 }
 
 /* scetion form  */
@@ -405,7 +413,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 6rem;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   border-bottom: 1px solid #dfe1e6;
 }
 
@@ -421,7 +429,7 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   border-bottom: 1px solid #dfe1e6;
   padding: 0 2rem 2rem 2rem;
   margin-top: 3rem;
@@ -484,7 +492,7 @@ form {
   }
 
   .menu a {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1rem;
     font-weight: 600;
     color: #fff;
@@ -492,7 +500,7 @@ form {
   }
 
   .menu {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
     color: #fff;
@@ -503,7 +511,7 @@ form {
   }
 
   .headline-intro {
-    background-image: url("image/deskIllistration.png");
+    background-image: url('image/deskIllistration.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 100% 0;
@@ -612,7 +620,7 @@ form {
     width: 100%;
     opacity: 1;
     background-color: #fc6703;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     color: #fff;
     font-size: 1.1rem;
@@ -673,7 +681,7 @@ form {
   }
 
   .thirth-panel {
-    background-image: url("image/img1.png");
+    background-image: url('image/img1.png');
   }
 
   .fourth-panel {
@@ -716,7 +724,7 @@ form {
   .section-about-me {
     background-image: url(image/largaboutme.png);
     background-repeat: no-repeat;
-    background-position: 100%  12rem;
+    background-position: 100% 12rem;
     background-size: 40rem;
     width: 100%;
     padding-bottom: 60px;
@@ -812,5 +820,162 @@ form {
 @media (max-width: 767px) {
   #overlayContent {
     width: 90%;
+  }
+}
+
+/* ****************************** POP UP STYLE ************************** */
+/* ****************************** POP UP STYLE ************************** */
+/* ****************************** POP UP STYLE ************************** */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+
+.section-popup {
+  height: 95vh;
+  width: 90vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.p-header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.p-heading-primary {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 4.4rem;
+  columns: #172b4d;
+  margin-bottom: 2.4rem;
+}
+
+.p-cross-btn {
+  cursor: pointer;
+  padding: 8px;
+  width: 3rem;
+  height: 3rem;
+}
+
+.p-tech-box {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.p-tech-item {
+  font-size: 1.3rem;
+  padding: 0.8rem;
+  border: 1px solid black;
+}
+
+.p-primary-image {
+  width: 100%;
+}
+
+.p-description-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.p-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: #344563;
+}
+
+.p-button-box {
+  margin-top: 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.btn {
+  color: #fff;
+  padding: 1.2rem 1.6rem;
+  background-color: #ff5b00;
+  font-size: 1.7rem !important;
+  font-weight: 700;
+}
+
+.btn--popup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn--popup:hover {
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+/* Overlay */
+
+.overlay2 {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(2px);
+  z-index: 6;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+  display: none;
+}
+
+.hide-scroll {
+  overflow: hidden;
+}
+
+/* ************** *
+* RESPONSIVE PAGE *
+**************** */
+
+@media (min-width: 768px) {
+  .p-hero-box {
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    column-gap: 3rem;
+    align-items: center;
+  }
+
+  .p-button-box {
+    justify-content: start;
   }
 }
