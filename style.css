@@ -451,7 +451,7 @@ form {
   gap: 0.7rem;
 }
 
-#text-form {
+#textarea {
   height: 7rem;
   background-color: #f5f2f1;
   border: none;
