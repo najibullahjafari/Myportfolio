@@ -288,7 +288,12 @@
 }
 
 .panel-container {
-  background-image: linear-gradient(179.4deg, rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.9) 84.03%), url(image/cardbackground.png);
+  background-image: linear-gradient(
+      179.4deg,
+      rgba(38, 38, 38, 0) 0.81%,
+      rgba(38, 38, 38, 0.9) 84.03%
+    ),
+    url(image/cardbackground.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -300,6 +305,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 15px;
+  padding: 12px;
 }
 
 .multiple-post-panel {
@@ -506,6 +512,9 @@ form {
     padding-right: 30px;
   }
 
+  .work-genral-header {
+    font-size: 22px;
+  }
   .headline-intro {
     background-image: url('image/deskIllistration.png');
     background-repeat: no-repeat;
@@ -519,7 +528,7 @@ form {
     flex-direction: column;
     justify-content: space-between;
     width: 1.2rem;
-    margin-left: -1.5rem;
+    margin-left: 0.5rem;
     margin-top: 0;
     position: absolute;
     top: 12rem;
@@ -555,7 +564,6 @@ form {
     width: 100%;
     position: relative;
     height: 60vh;
-    align-items: end;
   }
 
   .multiple-post-header-img {
@@ -641,7 +649,6 @@ form {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
-    float: left;
   }
 
   .work-public-container {
@@ -662,6 +669,7 @@ form {
     position: absolute;
     bottom: 24%;
     padding-left: 12px;
+    font-size: 16px;
   }
 
   .panel-img-box {
