@@ -288,7 +288,7 @@
 }
 
 .panel-container {
-  background-image: linear-gradient(179.4deg,rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.9)84.03%),url(image/cardbackground.png);
+  background-image: linear-gradient(179.4deg, rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.9) 84.03%), url(image/cardbackground.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
