@@ -178,7 +178,7 @@
 .multiple-post-description {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 12px;
   line-height: 24px;
   color: #fff;
   padding: 24px;
@@ -206,7 +206,7 @@
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 16px;
   line-height: 44px;
   color: #fff;
   padding-top: 12px;
@@ -288,7 +288,7 @@
 }
 
 .panel-container {
-  background-image: linear-gradient(179.4deg, rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.9) 84.03%), url(image/cardbackground.png);
+  background-image: linear-gradient(179.4deg, rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.9) 84.03% ), url(image/cardbackground.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -297,7 +297,6 @@
 }
 
 .card-language-con {
-  padding: 12px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 15px;
@@ -451,7 +450,7 @@ form {
   gap: 0.7rem;
 }
 
-#textarea {
+#text-form {
   height: 7rem;
   background-color: #f5f2f1;
   border: none;
@@ -540,10 +539,6 @@ form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-  }
-
-  .work-lang-box {
-    padding: 1.5rem 0.7rem;
   }
 
   .lang-panel1 {
