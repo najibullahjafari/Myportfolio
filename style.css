@@ -578,10 +578,17 @@ form {
   }
 
   .button-action {
-    display: none;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.5s ease;
+    background-color: #fc6703;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1.3rem;
+    scroll-behavior: smooth;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none; 
   }
 
   .panel-container p,
@@ -612,20 +619,6 @@ form {
     width: 100%;
     opacity: 1;
     pointer-events: initial;
-  }
-
-  .button-action {
-    background-color: #fc6703;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    color: #fff;
-    font-size: 1.5rem;
-    padding: 1.3rem;
-    scroll-behavior: smooth;
-    text-align: center;
-    justify-content: center;
-    text-decoration: none;
-    border: none; 
   }
 
   .button-action-first-card {
