@@ -31,7 +31,6 @@ pCloseBtn.addEventListener('click', () => {
   body.classList.remove('hide-scroll');
 });
 
-
 // ========= Add cards dynamically  ==========
 
 function addhtml() {
@@ -261,22 +260,17 @@ const projectBtns = document.querySelectorAll('.btn-project');
 
 // ====================== VALIDATION ==============
 
-document
-    .getElementById("contact-form-container")
-    .addEventListener("submit", function (e) {
-        e.preventDefault();
-        let emailInput = document.getElementById("email");
-        let errormessege = document.getElementById("errormessage");
-        if (emailInput.value.toLowerCase() != emailInput.value) {
-            errormessege.textContent = "Email should be in lowercase!";
-            if (!emailInput) {
-                console.log("the input form should not be empty");
-            }
-        } else {
-            errormessege.textContent = " ";
-            this.submit;
-        }
-    });
+// document.getElementById('contact-form-container').addEventListener('submit', function (e) {
+//   e.preventDefault();
+//   let emailInput = document.getElementById('email');
+//   let errormessege = document.getElementById('errormessage');
+//   if (emailInput.value.toLowerCase() != emailInput.value) {
+//     errormessege.textContent = 'Email should be in lowercase!';
+//   } else {
+//     errormessege.textContent = ' ';
+//     this.submit;
+//   }
+// });
 
 /* ****************
  * POP UP VARIABLES *
@@ -327,30 +321,30 @@ btnpopup.addEventListener('click', function () {
 });
 // =============== save data ===================
 
-const nameInput = document.getElementById("firstname");
-const emailInput = document.getElementById("email");
-const textInput = document.querySelector("textarea");
+// const nameInput = document.getElementById('firstname');
+// const emailInput = document.getElementById('email');
+// const textInput = document.querySelector('textarea');
 
-function saveToStorage() {
-    const saveData = {
-        name: nameInput.value,
-        email: emailInput.value,
-        text: textInput.value,
-    };
+// function saveToStorage() {
+//   const saveData = {
+//     name: nameInput.value,
+//     email: emailInput.value,
+//     text: textInput.value,
+//   };
 
-    localStorage.setItem("contactFormData", JSON.stringify(saveData));
-}
+//   localStorage.setItem('contactFormData', JSON.stringify(saveData));
+// }
 
-nameInput.addEventListener("input", saveToStorage);
-emailInput.addEventListener("input", saveToStorage);
-textInput.addEventListener("input", saveToStorage);
+// nameInput.addEventListener('input', saveToStorage);
+// emailInput.addEventListener('input', saveToStorage);
+// textInput.addEventListener('input', saveToStorage);
 
-document.addEventListener("DOMContentLoaded", () => {
-    const dataSaved = localStorage.getItem("contactFormData");
-    if (dataSaved) {
-        const data = JSON.parse(dataSaved);
-        nameInput.value = data.name;
-        emailInput.value = data.email;
-        textInput.value = data.text;
-    }
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//   const dataSaved = localStorage.getItem('contactFormData');
+//   if (dataSaved) {
+//     const data = JSON.parse(dataSaved);
+//     nameInput.value = data.name;
+//     emailInput.value = data.email;
+//     textInput.value = data.text;
+//   }
+// });
