@@ -261,22 +261,22 @@ const projectBtns = document.querySelectorAll('.btn-project');
 
 // ====================== VALIDATION ==============
 
-document
-    .getElementById("contact-form-container")
-    .addEventListener("submit", function (e) {
-        e.preventDefault();
-        let emailInput = document.getElementById("email");
-        let errormessege = document.getElementById("errormessage");
-        if (emailInput.value.toLowerCase() != emailInput.value) {
-            errormessege.textContent = "Email should be in lowercase!";
-            if (!emailInput) {
-                console.log("the input form should not be empty");
-            }
-        } else {
-            errormessege.textContent = " ";
-            this.submit;
-        }
-    });
+// document
+//     .getElementById("contact-form-container")
+//     .addEventListener("submit", function (e) {
+//         e.preventDefault();
+//         let emailInput = document.getElementById("email");
+//         let errormessege = document.getElementById("errormessage");
+//         if (emailInput.value.toLowerCase() != emailInput.value) {
+//             errormessege.textContent = "Email should be in lowercase!";
+//             if (!emailInput) {
+//                 console.log("the input form should not be empty");
+//             }
+//         } else {
+//             errormessege.textContent = " ";
+//             this.submit;
+//         }
+//     });
 
 /* ****************
  * POP UP VARIABLES *
