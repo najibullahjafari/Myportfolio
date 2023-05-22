@@ -542,6 +542,10 @@ form {
     gap: 2rem;
   }
 
+  .work-lang-box {
+    padding: 1.5rem 0.7rem;
+  }
+
   .lang-panel1 {
     display: none;
   }
@@ -573,22 +577,11 @@ form {
     display: flex;
   }
 
-  .work-lang-box {
-    padding: 1.6000000000000014rem 1.6999999999999993rem;
-  }
-
   .button-action {
-    background-color: #fc6703;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    color: #fff;
-    font-size: 1.5rem;
-    padding: 1.3rem;
-    scroll-behavior: smooth;
-    text-align: center;
-    justify-content: center;
-    text-decoration: none;
-    border: none;
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
   }
 
   .panel-container p,
