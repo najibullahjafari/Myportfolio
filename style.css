@@ -614,6 +614,20 @@ form {
     pointer-events: initial;
   }
 
+  .button-action {
+    background-color: #fc6703;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1.3rem;
+    scroll-behavior: smooth;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none; 
+  }
+
   .button-action-first-card {
     display: flex;
     position: absolute;

@@ -30,39 +30,7 @@ pCloseBtn.addEventListener('click', () => {
   overlay.classList.add('hidden');
   body.classList.remove('hide-scroll');
 });
-// =============== save data ===================
 
-// const nameInput = document.getElementById("firstname");
-// const emailInput = document.getElementById("email");
-// const lastInput = document.getElementById("lastname");
-// const textInput = document.querySelector("textarea");
-
-// function saveToStorage() {
-//     const saveData = {
-//         name: nameInput.value,
-//         lastname: lastInput.value,
-//         email: emailInput.value,
-//         text: textInput.value,
-//     };
-
-//     localStorage.setItem("contactFormData", JSON.stringify(saveData));
-// }
-
-// nameInput.addEventListener("input", saveToStorage);
-// emailInput.addEventListener("input", saveToStorage);
-// lastInput.addEventListener("input", saveToStorage);
-// textInput.addEventListener("input", saveToStorage);
-
-// document.addEventListener("DOMContentLoaded", () => {
-//     const dataSaved = localStorage.getItem("contactFormData");
-//     if (dataSaved) {
-//         const data = JSON.parse(dataSaved);
-//         nameInput.value = data.name;
-//         lastInput.value = data.lastname;
-//         emailInput.value = data.email;
-//         textInput.value = data.text;
-//     }
-// });
 
 // ========= Add cards dynamically  ==========
 
@@ -181,7 +149,7 @@ function addhtml() {
             <li class="work-lang-box"><span>Bootstrap</span></li>
             <li class="work-lang-box"><span>Ruby</span></li>
           </ul>
-          <button href="#" class="button-action btn-project" id="overlayButton">See project</button>
+          <a href="#" class="button-action btn-project" id="overlayButton">See project</a>
         </div>
       </div>
     </div>
@@ -293,22 +261,22 @@ const projectBtns = document.querySelectorAll('.btn-project');
 
 // ====================== VALIDATION ==============
 
-// document
-//     .getElementById("contact-form")
-//     .addEventListener("submit", function (e) {
-//         e.preventDefault();
-//         let emailInput = document.getElementById("email");
-//         let errormessege = document.getElementById("errormessage");
-//         if (emailInput.value.toLowerCase() != emailInput.value) {
-//             errormessege.textContent = "Email should be in lowercase!";
-//             if (!emailInput) {
-//                 console.log("the input form should not be empty");
-//             }
-//         } else {
-//             errormessege.textContent = " ";
-//             this.submit;
-//         }
-//     });
+document
+    .getElementById("contact-form-container")
+    .addEventListener("submit", function (e) {
+        e.preventDefault();
+        let emailInput = document.getElementById("email");
+        let errormessege = document.getElementById("errormessage");
+        if (emailInput.value.toLowerCase() != emailInput.value) {
+            errormessege.textContent = "Email should be in lowercase!";
+            if (!emailInput) {
+                console.log("the input form should not be empty");
+            }
+        } else {
+            errormessege.textContent = " ";
+            this.submit;
+        }
+    });
 
 /* ****************
  * POP UP VARIABLES *
@@ -356,4 +324,33 @@ for (let i = 0; i <= projectBtns.length; i += 1) {
 const btnpopup = document.querySelector('btn--popup');
 btnpopup.addEventListener('click', function () {
   window.open('https://najibullahjafari.github.io/');
+});
+// =============== save data ===================
+
+const nameInput = document.getElementById("firstname");
+const emailInput = document.getElementById("email");
+const textInput = document.querySelector("textarea");
+
+function saveToStorage() {
+    const saveData = {
+        name: nameInput.value,
+        email: emailInput.value,
+        text: textInput.value,
+    };
+
+    localStorage.setItem("contactFormData", JSON.stringify(saveData));
+}
+
+nameInput.addEventListener("input", saveToStorage);
+emailInput.addEventListener("input", saveToStorage);
+textInput.addEventListener("input", saveToStorage);
+
+document.addEventListener("DOMContentLoaded", () => {
+    const dataSaved = localStorage.getItem("contactFormData");
+    if (dataSaved) {
+        const data = JSON.parse(dataSaved);
+        nameInput.value = data.name;
+        emailInput.value = data.email;
+        textInput.value = data.text;
+    }
 });
