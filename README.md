@@ -3,7 +3,7 @@
 <div align="center">
   <br/>
 
-  <h3><b>Portfolio Mobile version</b></h3>
+  <h3><b>Microverse Portfolio project</b></h3>
 
 </div>
 
@@ -29,9 +29,9 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Portfolio_mobile-version] <a name="about-project"></a>
+# 📖 [Myportfolio] <a name="about-project"></a>
 
-**[Portfolio_mobile-version]** is a my portfolio project.
+**[Portfolio_mobile-version]** is Microverse portfolio project.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -68,7 +68,7 @@ In this project best coding practices is used.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Check out the live demo of this project [here](https://najibullahjafari.github.io/Myportfolio/)).
+Check out the live demo of this project [here](https://lucky-axolotl-6dc928.netlify.app/).
 
 
 
@@ -76,7 +76,7 @@ Check out the live demo of this project [here](https://najibullahjafari.github.i
 
 To get a local copy up and running, follow these steps.
 
-1. Go to this URL link: https://github.com/najibullahjafari/Portfolio-Mobile_version.git
+1. Go to this URL link: [here](https://github.com/najibullahjafari/Myportfolio)
 2. clone the repo and start working on it.
 
 ### Prerequisites
@@ -170,12 +170,6 @@ Your working browser.
 - Twitter: [Najibullah_jafari](https://twitter.com/Najib_Jafari_)
 - LinkedIn: [Najibullah_jafari](https://www.linkedin.com/in/najibulla-jafari-609852263/)
 
-👤 **Luis Renan Pavanello**
-
-- GitHub: [@luisrpavanelli](https://github.com/luisrpavanelli)
-- Twitter: [@luisrpavanello](https://twitter.com/luisrpavanello)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/luisrpavanello)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -189,7 +183,7 @@ Your working browser.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/najibullahjafari/Portfolio-Mobile_version/issues).
+Feel free to check the [issues page](https://github.com/najibullahjafari/Myportfolio/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
