@@ -43,117 +43,7 @@ function addhtml() {
 
   var dynamichtml = `
 
-  <section class="section-work " id="projectSection">
-    <div class="work-public-oontainer">
-      <div class="template1">
-        <div class="work-container">
-          <h2 class="work-h2 ">My Recent Works</h2>
-          <span class="line"><span />
-        </div>
-        <div class="work-first-card">
-          <div class="work-yoga-img">
-            <img src="image/ImgPlaceholder.png" alt="multiple-Post illistration" class="multiple-post-header-img">
-          </div>
-          <div class="work-first-text ">
-            <h3 class="work-genral-header-first genral-font">Multiple-Post Stories</h3>
-            <p class="multiple-post-description-first">
-              A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-            </p>
-            <ul class="work-lanaguage ">
-              <li class="work-first-lang"><span>CSS</span></li>
-              <li class="work-first-lang"><span>HTML</span></li>
-              <li class="work-first-lang"><span>Bootstrap</span></li>
-              <li class="work-first-lang"><span>Ruby</span></li>
-            </ul>
-            <button class="button-action-first btn-project " id="overlayButton">See project</d></button>
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="panel-container first-panel">
-          <div class="panel-mobile-content1 ">
-            <h3 class="work-genral-header genral-font">Profesional Art Printing Data</h3>
-            <p class="multiple-post-description">A daily selection of privately personalized reads; no accounts or
-              sign-ups required. Has been the industry's standard.</p>
-          </div>
-          <ul class="card-language-con lang-panel1">
-            <li class="work-lang-box"><span>HTML</span></li>
-            <li class="work-lang-box"><span>Bootstrap</span></li>
-            <li class="work-lang-box"><span>Ruby</span></li>
-          </ul>
-          <a href="#" class=" button-action btn-project" id="overlayButton">See project</a>
-        </div>
-        <div class="panel-container second-panel">
-          <div class="panel-mobile-content">
-            <h3 class="work-genral-header genral-font">Profesional Art Printing Data</h3>
-            <p class="multiple-post-description">A daily selection of privately personalized reads; no accounts or
-              sign-ups required. Has been the industry's standard.</p>
-          </div>
-          <ul class="card-language-con ">
-            <li class="work-lang-box">
-              <spab>HTML</spab>
-            </li>
-            <li class="work-lang-box"><span>Bootstrap</span></li>
-            <li class="work-lang-box"><span>Ruby</span></li>
-          </ul>
-          <a href="#" class="button-action btn-project" id="overlayButton">See project</a>
-        </div>
-        <div class="panel-container tirth-panel ">
-          <div class="panel-mobile-content">
-            <h3 class="work-genral-header genral-font">Profesional Art Printing Data</h3>
-            <p class="multiple-post-description">A daily selection of privately personalized reads; no accounts or
-              sign-ups required. Has been the industry's standard.</p>
-          </div>
-          <ul class="card-language-con flex">
-            <li class="work-lang-box"><span>HTML</span></li>
-            <li class="work-lang-box"><span>Bootstrap</span></li>
-            <li class="work-lang-box"><span>Ruby</span></li>
-          </ul>
-          <a href="#" class="button-action btn-project" id="overlayButton">See project</a>
-        </div>
-        <div class="panel-container fourth-panel">
-          <div class="panel-mobile-content">
-            <h3 class="work-genral-header genral-font">Profesional Art Printing Data</h3>
-            <p class="multiple-post-description">A daily selection of privately personalized reads; no accounts or
-              sign-ups required. Has been the industry's standard.</p>
-          </div>
-          <ul class="card-language-con flex">
-            <li class="work-lang-box"><span>HTML</span></li>
-            <li class="work-lang-box"><span>Bootstrap</span></li>
-            <li class="work-lang-box"><span>Ruby</span></li>
-          </ul>
-          <a href="#" class="button-action btn-project" id="overlayButton">See project</a>
-        </div>
-        <div class="panel-container fifth-panel">
-          <div class="panel-mobile-content">
-            <h3 class="work-genral-header genral-font">Profesional Art Printing Data</h3>
-            <p class="multiple-post-description">A daily selection of privately personalized reads; no accounts or
-              sign-ups required. Has been the industry's standard.</p>
-          </div>
-          <ul class="card-language-con flex">
-            <li class="work-lang-box"><span>HTML</span></li>
-            <li class="work-lang-box"><span>Bootstrap</span></li>
-            <li class="work-lang-box"><span>Ruby</span></li>
-          </ul>
-          <a href="#" class="button-action btn-project" id="overlayButton">See project</a>
-        </div>
-        <div class="panel-container sixth-panel">
-          <div class="panel-mobile-content">
-            <h3 class="work-genral-header genral-font">Profesional Art Printing Data</h3>
-            <p class="multiple-post-description">A daily selection of privately personalized reads; no accounts or
-              sign-ups required. Has been the industry's standard.</p>
-          </div>
-          <ul class="card-language-con flex">
-            <li class="work-lang-box"><span>HTML</span></li>
-            <li class="work-lang-box"><span>Bootstrap</span></li>
-            <li class="work-lang-box"><span>Ruby</span></li>
-          </ul>
-          <a href="#" class="button-action btn-project" id="overlayButton">See project</a>
-        </div>
-      </div>
-    </div>
-  </section>`;
+  `;
   var section = document.createElement('section');
   var div = document.createElement('div');
   div.innerHTML = dynamichtml;
@@ -173,87 +63,80 @@ window.addEventListener('load', addhtml);
 const allProjectInfo = [
   // Project 1
   {
-    name: 'Multi Post Stories #1',
+    name: 'My Crypto',
     description: [
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos neque deleniti maxime delectus voluptate laboriosam reprehenderit ipsa quam quaerat facere harum perspiciatis a suscipit eligendi omnis, nam ab. Aliquid!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos neque deleniti maxime delectus voluptate laboriosam reprehenderit ipsa quam quaerat facere harum perspiciatis a suscipit eligendi omnis, nam ab. Aliquid!',
+      'My Crypto is a cutting-edge, responsive web application that provides real-time updates on the current prices of the most popular cryptocurrencies. Built with a blend of modern technologies, this dynamic platform harnesses the power of React and Redux, supported by CSS3 for sleek and intuitive design',
     ],
     imageSrc: './img/close-btn.png',
-    technologies: ['HTML', 'CSS', 'Bootstrap', 'Ruby on Rails'],
-    liveDemo: 'https://najibullahjafari.github.io/',
-    sourceLink: '',
+    technologies: ['React', 'Redux', 'Bootstrap', 'CSS3'],
+    liveDemo: 'https://64ddfa6f503d267147502fb8--tiny-sfogliatella-1f3791.netlify.app/',
+    sourceLink: 'https://github.com/najibullahjafari/My-crypto',
   },
   // Project 2
   {
-    name: 'Multi Post Stories #1',
+    name: 'Bookstore',
     description: [
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos neque deleniti maxime delectus voluptate laboriosam reprehenderit ipsa quam quaerat facere harum perspiciatis a suscipit eligendi omnis, nam ab. Aliquid!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos neque deleniti maxime delectus voluptate laboriosam reprehenderit ipsa quam quaerat facere harum perspiciatis a suscipit eligendi omnis, nam ab. Aliquid!',
+      'Bookstore is a web application built with React and Redux that allows users to explore, categorize, and manage books. It features a user-friendly interface with options to add, edit, and remove books while tracking their reading progress',
     ],
     imageSrc: './img/close-btn.png',
-    technologies: ['HTML', 'CSS', 'Bootstrap', 'Ruby on Rails'],
-    liveDemo: 'https://najibullahjafari.github.io/',
-    sourceLink: '',
+    technologies: ['React', 'Redux', 'Bootstrap', 'CSS3'],
+    liveDemo: 'https://64cd86e7739d9460c2d1d2c9--lucent-bavarois-61bf5d.netlify.app/',
+    sourceLink: 'https://github.com/najibullahjafari/bookstore',
   },
   // Project 3
   {
-    name: 'Multi Post Stories #3',
+    name: 'Worl Vista',
     description: [
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos neque deleniti maxime delectus voluptate laboriosam reprehenderit ipsa quam quaerat facere harum perspiciatis a suscipit eligendi omnis, nam ab. Aliquid!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos neque deleniti maxime delectus voluptate laboriosam reprehenderit ipsa quam quaerat facere harum perspiciatis a suscipit eligendi omnis, nam ab. Aliquid!',
+      'World Vista, the JavaScript Capstone project, is an extensive and enlightening web application that serves as an invaluable resource for exploring information on approximately 250 countries around the world. This impressive project offers an in-depth look into the diverse cultures, economies, geographies, and demographics of nations spanning the globe',
     ],
     imageSrc: './img/close-btn.png',
-    technologies: ['HTML', 'CSS', 'Bootstrap', 'Ruby on Rails'],
-    liveDemo: 'https://najibullahjafari.github.io/',
-    sourceLink: 'https://github.com/najibullahjafari/Portfolio',
+    technologies: ['JavaScript', 'CSS', 'Bootstrap', 'Html'],
+    liveDemo: 'https://gregarious-cupcake-5d65a2.netlify.app/',
+    sourceLink: 'https://github.com/najibullahjafari/World-Vista',
   },
   // Project 4
   {
-    name: 'Multi Post Stories #4',
+    name: 'Legendary Portfolio',
     description: [
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos neque deleniti maxime delectus voluptate laboriosam reprehenderit ipsa quam quaerat facere harum perspiciatis a suscipit eligendi omnis, nam ab. Aliquid!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos neque deleniti maxime delectus voluptate laboriosam reprehenderit ipsa quam quaerat facere harum perspiciatis a suscipit eligendi omnis, nam ab. Aliquid!',
+      'A visually captivating and interactive portfolio website. Built with HTML, CSS, and JavaScript, incorporating Bootstrap for enhanced styling. This project showcases your work, skills, and achievements in a sleek and memorable manner.',
     ],
     imageSrc: './img/close-btn.png',
-    technologies: ['HTML', 'CSS', 'Bootstrap', 'Ruby on Rails'],
+    technologies: ['HTML', 'CSS', 'Bootstrap'],
     liveDemo: 'https://najibullahjafari.github.io/',
     sourceLink: 'https://github.com/najibullahjafari/Portfolio',
   },
   // Project 5
   {
-    name: 'Multi Post Stories #5',
+    name: 'Awesome Book',
     description: [
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos neque deleniti maxime delectus voluptate laboriosam reprehenderit ipsa quam quaerat facere harum perspiciatis a suscipit eligendi omnis, nam ab. Aliquid!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos neque deleniti maxime delectus voluptate laboriosam reprehenderit ipsa quam quaerat facere harum perspiciatis a suscipit eligendi omnis, nam ab. Aliquid!',
+      'An interactive web application for managing and organizing your favorite books. Developed using HTML, CSS, JavaScript, and Bootstrap. Features include adding and removing books, storing book details, and a user-friendly interface.',
     ],
     imageSrc: './img/close-btn.png',
-    technologies: ['HTML', 'CSS', 'Bootstrap', 'Ruby on Rails'],
-    liveDemo: 'https://najibullahjafari.github.io/',
-    sourceLink: 'https://github.com/najibullahjafari/Portfolio',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+    liveDemo: 'https://najibullahjafari.github.io/Awesome-books/',
+    sourceLink: 'https://github.com/najibullahjafari/Awesome-books',
   },
   // Project 6
   {
-    name: 'Multi Post Stories #6',
+    name: 'Leaderboard',
     description: [
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos neque deleniti maxime delectus voluptate laboriosam reprehenderit ipsa quam quaerat facere harum perspiciatis a suscipit eligendi omnis, nam ab. Aliquid!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos neque deleniti maxime delectus voluptate laboriosam reprehenderit ipsa quam quaerat facere harum perspiciatis a suscipit eligendi omnis, nam ab. Aliquid!',
+      'Leaderboard is a a web page that will save your score and your name online, It is developed by HTML, CSS, JavaScript, Git flow, API.',
     ],
     imageSrc: './img/close-btn.png',
     technologies: ['HTML', 'CSS', 'Bootstrap', 'Ruby on Rails'],
-    liveDemo: 'https://najibullahjafari.github.io/',
-    sourceLink: 'https://github.com/najibullahjafari/Portfolio',
+    liveDemo: 'https://classy-cheesecake-b6b41b.netlify.app/',
+    sourceLink: 'https://github.com/najibullahjafari/Leaderboard',
   },
   // Project 7
   {
-    name: 'Multi Post Stories #7',
+    name: 'Space Traveller Hube',
     description: [
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos neque deleniti maxime delectus voluptate laboriosam reprehenderit ipsa quam quaerat facere harum perspiciatis a suscipit eligendi omnis, nam ab. Aliquid!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos neque deleniti maxime delectus voluptate laboriosam reprehenderit ipsa quam quaerat facere harum perspiciatis a suscipit eligendi omnis, nam ab. Aliquid!',
+      'This is a React and Redux website that displays a list of Rockets and Space Missions and allows you to book rockets and join selected space missions.This is a React and Redux website that displays a list of Rockets and Space Missions and allows you to book rockets and join selected space missions.'
     ],
     imageSrc: './img/close-btn.png',
-    technologies: ['HTML', 'CSS', 'Bootstrap', 'Ruby on Rails'],
-    liveDemo: 'https://najibullahjafari.github.io/',
-    sourceLink: 'https://github.com/najibullahjafari/Portfolio',
+    technologies: ['React', 'Redux', 'Bootstrap', 'CSS3'],
+    liveDemo: 'https://endearing-flan-d8189e.netlify.app/',
+    sourceLink: 'https://github.com/MasumaJaffery/space-travelers-hub',
   },
 ];
 
