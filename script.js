@@ -67,7 +67,7 @@ const allProjectInfo = [
     description: [
       'My Crypto is a cutting-edge, responsive web application that provides real-time updates on the current prices of the most popular cryptocurrencies. Built with a blend of modern technologies, this dynamic platform harnesses the power of React and Redux, supported by CSS3 for sleek and intuitive design',
     ],
-    imageSrc: './img/close-btn.png',
+    imageSrc: './img/mycrypto.png',
     technologies: ['React', 'Redux', 'Bootstrap', 'CSS3'],
     liveDemo: 'https://64ddfa6f503d267147502fb8--tiny-sfogliatella-1f3791.netlify.app/',
     sourceLink: 'https://github.com/najibullahjafari/My-crypto',
@@ -78,7 +78,7 @@ const allProjectInfo = [
     description: [
       'Bookstore is a web application built with React and Redux that allows users to explore, categorize, and manage books. It features a user-friendly interface with options to add, edit, and remove books while tracking their reading progress',
     ],
-    imageSrc: './img/close-btn.png',
+    imageSrc: './img/bookstore.png',
     technologies: ['React', 'Redux', 'Bootstrap', 'CSS3'],
     liveDemo: 'https://64cd86e7739d9460c2d1d2c9--lucent-bavarois-61bf5d.netlify.app/',
     sourceLink: 'https://github.com/najibullahjafari/bookstore',
@@ -89,7 +89,7 @@ const allProjectInfo = [
     description: [
       'World Vista, the JavaScript Capstone project, is an extensive and enlightening web application that serves as an invaluable resource for exploring information on approximately 250 countries around the world. This impressive project offers an in-depth look into the diverse cultures, economies, geographies, and demographics of nations spanning the globe',
     ],
-    imageSrc: './img/close-btn.png',
+    imageSrc: './img/worldvista.png',
     technologies: ['JavaScript', 'CSS', 'Bootstrap', 'Html'],
     liveDemo: 'https://gregarious-cupcake-5d65a2.netlify.app/',
     sourceLink: 'https://github.com/najibullahjafari/World-Vista',
@@ -111,7 +111,7 @@ const allProjectInfo = [
     description: [
       'An interactive web application for managing and organizing your favorite books. Developed using HTML, CSS, JavaScript, and Bootstrap. Features include adding and removing books, storing book details, and a user-friendly interface.',
     ],
-    imageSrc: './img/close-btn.png',
+    imageSrc: './img/awesomebook.png',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
     liveDemo: 'https://najibullahjafari.github.io/Awesome-books/',
     sourceLink: 'https://github.com/najibullahjafari/Awesome-books',
@@ -133,7 +133,7 @@ const allProjectInfo = [
     description: [
       'This is a React and Redux website that displays a list of Rockets and Space Missions and allows you to book rockets and join selected space missions.This is a React and Redux website that displays a list of Rockets and Space Missions and allows you to book rockets and join selected space missions.'
     ],
-    imageSrc: './img/close-btn.png',
+    imageSrc: './img/space.png',
     technologies: ['React', 'Redux', 'Bootstrap', 'CSS3'],
     liveDemo: 'https://endearing-flan-d8189e.netlify.app/',
     sourceLink: 'https://github.com/MasumaJaffery/space-travelers-hub',
@@ -174,35 +174,43 @@ const description = document.querySelector('.p-description');
  * EVENT LISTENERS *
  *************** */
 
-for (let i = 0; i <= projectBtns.length; i += 1) {
+for (let i = 0; i < projectBtns.length; i += 1) {
   const currentProject = allProjectInfo[i];
   projectBtns[i].addEventListener('click', event => {
-    heading.innerHTML = '';
-    techContainer.innerHTML = '';
-    tech.innerHTML = '';
-    descBox.innerHTML = '';
-    description.innerHTML = '';
-    heading.textContent = currentProject.name;
-
+    // Clear any existing content
+    const popup = document.querySelector('.section-popup');
+    popup.querySelector('.p-heading-primary').textContent = currentProject.name;
+    
+    const techBox = popup.querySelector('.p-tech-box');
+    techBox.innerHTML = ''; // Clear the existing technologies
     for (let k = 0; k < currentProject.technologies.length; k += 1) {
       const curTech = document.createElement('li');
       curTech.className = 'p-tech-item';
       curTech.textContent = currentProject.technologies[k];
-      techContainer.append(curTech);
+      techBox.appendChild(curTech);
     }
 
+    const descriptionBox = popup.querySelector('.p-description-box');
+    descriptionBox.innerHTML = ''; // Clear the existing description
     for (let k = 0; k < currentProject.description.length; k += 1) {
       const curDesc = document.createElement('p');
       curDesc.className = 'p-description';
       curDesc.textContent = currentProject.description[k];
-      descBox.append(curDesc);
+      descriptionBox.appendChild(curDesc);
     }
+
+    // Optionally, set the image source based on the current project
+    const primaryImage = popup.querySelector('.p-primary-image');
+    primaryImage.src = currentProject.imageSrc;
+
     event.preventDefault();
-    popUp.classList.remove('hidden');
+    popup.classList.remove('hidden');
     overlay.classList.remove('hidden');
     body.classList.add('hide-scroll');
   });
 }
+
+
 
 const btnpopup = document.querySelector('btn--popup');
 btnpopup.addEventListener('click', function () {
