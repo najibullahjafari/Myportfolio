@@ -260,7 +260,7 @@
   font-weight: 700;
   color: #fff;
   font-size: 1.1rem;
-  padding: 0.7rem;
+  padding: 0.9rem;
   scroll-behavior: smooth;
   text-align: center;
   justify-content: center;
@@ -559,7 +559,7 @@ form {
   .panel-container {
     width: 100%;
     position: relative;
-    height: 60vh;
+    height: 50vh;
   }
 
   .multiple-post-header-img {
@@ -644,7 +644,7 @@ form {
   .card-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .work-public-container {
@@ -698,6 +698,17 @@ form {
 
   .button-action :hover {
     display: flex;
+    background-color: #fc6703;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    scroll-behavior: smooth;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
   }
 
   .btn-about {
@@ -837,6 +848,7 @@ body {
 }
 
 .section-popup {
+  border-radius: 10px;
   height: 95vh;
   width: 90vw;
   position: fixed;
