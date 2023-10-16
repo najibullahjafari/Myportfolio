@@ -696,18 +696,19 @@ form {
     background-image: url(image/ImgPlaceholder3.png);
   }
 
-  .button-action {
-  background-color: #fc6703;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  color: #fff;
-  font-size: 1.5rem;
-  padding: 1.5rem;
-  scroll-behavior: smooth;
-  text-align: center;
-  justify-content: center;
-  text-decoration: none;
-  border: none;
+  .button-action :hover {
+    display: flex;
+    background-color: #fc6703;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    scroll-behavior: smooth;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
   }
 
   .btn-about {
