@@ -473,7 +473,6 @@ form {
 
 .first-panel {
   background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(./img/bookstore.png);
-
 }
 
 .second-panel {
@@ -499,7 +498,7 @@ form {
 .seventh-panel {
   background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(img/budgetpro.png);
   background-color: rgba(0, 0, 0, 0.5);
-  color: white; 
+  color: white;
 }
 
 .genral-panel {
@@ -510,7 +509,6 @@ form {
   width: 100%;
   height: 100%;
 }
-
 
 /* ===================================== responsive part break point ============================================  */
 
