@@ -179,7 +179,6 @@
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 24px;
   color: #fff;
   padding: 24px;
 }
@@ -472,6 +471,47 @@ form {
   border-bottom: 1px solid #dbd8d7;
 }
 
+.first-panel {
+  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(./img/bookstore.png);
+
+}
+
+.second-panel {
+  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(./img/worldvista.png);
+}
+
+.thirth-panel {
+  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(./img/legendary.png);
+}
+
+.fourth-panel {
+  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(./img/awesome.png);
+}
+
+.fifth-panel {
+  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(./img/leader_board.png);
+}
+
+.sixth-panel {
+  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(./img/space.png);
+}
+
+.seventh-panel {
+  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(img/budgetpro.png);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white; 
+}
+
+.genral-panel {
+  box-shadow: 2px 2px 5px #272422;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+
 /* ===================================== responsive part break point ============================================  */
 
 @media screen and (min-width: 768px) {
@@ -580,20 +620,14 @@ form {
     display: none;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.8s ease;
   }
 
   .panel-container p,
   .panel-container ul,
   .panel-container h3 {
     opacity: 1;
-    transition: opacity 0.5s ease;
-  }
-
-  .first-panel p,
-  .first-panel ul,
-  .first-panel h3 {
-    display: none;
+    transition: opacity 0.8s ease;
   }
 
   .panel-container:hover h3,
@@ -657,12 +691,12 @@ form {
 
   .card-language-con {
     position: absolute;
-    bottom: 12%;
+    bottom: 1%;
+    left: 6%;
     padding-left: 12px;
   }
 
   .multiple-post-description {
-    position: absolute;
     bottom: 24%;
     padding-left: 12px;
     font-size: 16px;
@@ -670,30 +704,6 @@ form {
 
   .panel-img-box {
     width: 60%;
-  }
-
-  .first-panel {
-    background-image: url(image/ImgPlaceholder1.png);
-  }
-
-  .second-panel {
-    background-image: url(image/ImgPlaceholder2.png);
-  }
-
-  .thirth-panel {
-    background-image: url('image/img1.png');
-  }
-
-  .fourth-panel {
-    background-image: url(image/Img1.png);
-  }
-
-  .fifth-panel {
-    background-image: url(image/ImgPlaceholder2.png);
-  }
-
-  .sixth-panel {
-    background-image: url(image/ImgPlaceholder3.png);
   }
 
   .button-action :hover {
