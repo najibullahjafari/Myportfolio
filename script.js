@@ -92,7 +92,7 @@ const allProjectInfo = [
     imageSrc: './img/worldvista.png',
     technologies: ['JavaScript', 'CSS', 'Bootstrap', 'Html'],
     liveDemo: 'https://gregarious-cupcake-5d65a2.netlify.app/',
-    sourceLink: 'https://github.com/najibullahjafari/World-Vista',
+    sourceLink: 'https://github.com/najibullahjafari/World-vistas',
   },
   // Project 4
   {
@@ -100,10 +100,10 @@ const allProjectInfo = [
     description: [
       'A visually captivating and interactive portfolio website. Built with HTML, CSS, and JavaScript, incorporating Bootstrap for enhanced styling. This project showcases your work, skills, and achievements in a sleek and memorable manner.',
     ],
-    imageSrc: './img/close-btn.png',
+    imageSrc: './img/legendary.png',
     technologies: ['HTML', 'CSS', 'Bootstrap'],
-    liveDemo: 'https://najibullahjafari.github.io/',
-    sourceLink: 'https://github.com/najibullahjafari/Portfolio',
+    liveDemo: 'https://tiny-donut-bb9f40.netlify.app/',
+    sourceLink: 'https://github.com/najibullahjafari/Legendary-portfolio-',
   },
   // Project 5
   {
@@ -122,7 +122,7 @@ const allProjectInfo = [
     description: [
       'Leaderboard is a a web page that will save your score and your name online, It is developed by HTML, CSS, JavaScript, Git flow, API.',
     ],
-    imageSrc: './img/close-btn.png',
+    imageSrc: './img/leader_board.png',
     technologies: ['HTML', 'CSS', 'Bootstrap', 'Ruby on Rails'],
     liveDemo: 'https://classy-cheesecake-b6b41b.netlify.app/',
     sourceLink: 'https://github.com/najibullahjafari/Leaderboard',
@@ -136,7 +136,17 @@ const allProjectInfo = [
     imageSrc: './img/space.png',
     technologies: ['React', 'Redux', 'Bootstrap', 'CSS3'],
     liveDemo: 'https://endearing-flan-d8189e.netlify.app/',
-    sourceLink: 'https://github.com/MasumaJaffery/space-travelers-hub',
+    sourceLink: 'https://github.com/najibullahjafari/space-travelers-hub',
+  },
+  {
+    name: 'BudgetPro',
+    description: [
+      'BudgetPro is the Ruby on Rails capstone project is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent.'
+    ],
+    imageSrc: 'img/budgetpro.png',
+    technologies: ['Ruby', 'Rails', 'Bootstrap', 'CSS3'],
+    liveDemo: 'https://budget-8wcg.onrender.com/',
+    sourceLink: 'https://github.com/najibullahjafari/BudgetPro',
   },
 ];
 
@@ -164,11 +174,11 @@ const projectBtns = document.querySelectorAll('.btn-project');
 /* ****************
  * POP UP VARIABLES *
  *************** */
-const heading = document.querySelector('.p-heading-primary');
-const techContainer = document.querySelector('.p-tech-box');
-const tech = document.querySelector('.p-tech-item');
-const descBox = document.querySelector('.p-description-box');
-const description = document.querySelector('.p-description');
+// const heading = document.querySelector('.p-heading-primary');
+// const techContainer = document.querySelector('.p-tech-box');
+// const tech = document.querySelector('.p-tech-item');
+// const descBox = document.querySelector('.p-description-box');
+// const description = document.querySelector('.p-description');
 
 /* ****************
  * EVENT LISTENERS *
