@@ -174,11 +174,11 @@ const projectBtns = document.querySelectorAll('.btn-project');
 /* ****************
  * POP UP VARIABLES *
  *************** */
-const heading = document.querySelector('.p-heading-primary');
-const techContainer = document.querySelector('.p-tech-box');
-const tech = document.querySelector('.p-tech-item');
-const descBox = document.querySelector('.p-description-box');
-const description = document.querySelector('.p-description');
+// const heading = document.querySelector('.p-heading-primary');
+// const techContainer = document.querySelector('.p-tech-box');
+// const tech = document.querySelector('.p-tech-item');
+// const descBox = document.querySelector('.p-description-box');
+// const description = document.querySelector('.p-description');
 
 /* ****************
  * EVENT LISTENERS *
