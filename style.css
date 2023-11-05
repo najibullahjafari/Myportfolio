@@ -125,7 +125,7 @@
 }
 
 .headline-container {
-  padding-left: 60px;
+  padding-left: 30px;
 }
 
 .social-icon {
@@ -520,6 +520,10 @@ form {
   .headline-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .headline-container {
+    padding-left: 60px;
   }
 
   .menu-icon {
