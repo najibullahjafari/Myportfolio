@@ -1,4 +1,4 @@
-<a name="readme-top"></a>
+<img width="896" alt="image" src="https://github.com/najibullahjafari/Myportfolio/assets/121656832/8e370a01-6f55-4575-b3dc-cd5fa1b79e63"><a name="readme-top"></a>
 
 <div align="center">
   <br/>
@@ -32,7 +32,7 @@
 # 📖 [Myportfolio] <a name="about-project"></a>
 
 **[Portfolio_mobile-version]** is Microverse portfolio project.
-<img width="893" alt="Screenshot 2023-11-04 232206" src="https://github.com/najibullahjafari/Myportfolio/assets/121656832/536ec38e-d5c5-445a-b4f1-2e8637d77405">
+<img width="896" alt="Screenshot 2023-11-06 214851" src="https://github.com/najibullahjafari/Myportfolio/assets/121656832/b16d83df-2b94-48aa-840f-867cc33cb1e3">
 <img width="887" alt="Screenshot 2023-11-04 232216" src="https://github.com/najibullahjafari/Myportfolio/assets/121656832/da4739fb-e80d-4130-b975-65ee34114fe9">
 <img width="891" alt="Screenshot 2023-11-04 232226" src="https://github.com/najibullahjafari/Myportfolio/assets/121656832/40619799-8685-4cc4-b79c-7feb4e38172e">
 <img width="893" alt="Screenshot 2023-11-04 234001" src="https://github.com/najibullahjafari/Myportfolio/assets/121656832/4890445d-d7f8-4a29-bbf0-7022fe9768a0">
