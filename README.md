@@ -1,4 +1,4 @@
-<img width="896" alt="image" src="https://github.com/najibullahjafari/Myportfolio/assets/121656832/8e370a01-6f55-4575-b3dc-cd5fa1b79e63"><a name="readme-top"></a>
+
 
 <div align="center">
   <br/>
