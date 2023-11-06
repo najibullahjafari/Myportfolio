@@ -90,9 +90,9 @@
 
 .headline-intro {
   background-color: #1c1a19;
-  background-image: url('image/illustration-header-mobile.png');
+  background-image: url('img/najib1.png');
   background-repeat: no-repeat;
-  background-position: 100% 130%;
+  background-position: 10px -97%;
   padding: 0 1.2rem 6rem 1.2rem;
 }
 
@@ -554,7 +554,7 @@ form {
   }
 
   .headline-intro {
-    background-image: url('image/deskIllistration.png');
+    background-image: url('img/najib1.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 100% 0;
