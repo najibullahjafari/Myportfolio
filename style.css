@@ -192,6 +192,15 @@
   padding-left: 0;
 }
 
+.work-yoga-img {
+  box-shadow: 2px 2px 5px #272422;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.work-yoga-img:hover {
+  box-shadow: 4px 4px 10px #272422;
+}
+
 .work-first-lang {
   border: 1px solid #8993a4;
   font-family: 'Inter', sans-serif;
@@ -287,7 +296,12 @@
 }
 
 .panel-container {
-  background-image: linear-gradient(179.4deg, rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.9) 84.03%), url(image/cardbackground.png);
+  background-image: linear-gradient(
+      179.4deg,
+      rgba(38, 38, 38, 0) 0.81%,
+      rgba(38, 38, 38, 0.9) 84.03%
+    ),
+    url(image/cardbackground.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -472,31 +486,38 @@ form {
 }
 
 .first-panel {
-  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(./img/bookstore.png);
+  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
+    url(./img/bookstore.png);
 }
 
 .second-panel {
-  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(./img/worldvista.png);
+  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
+    url(./img/worldvista.png);
 }
 
 .thirth-panel {
-  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(./img/legendary.png);
+  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
+    url(./img/legendary.png);
 }
 
 .fourth-panel {
-  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(./img/awesome.png);
+  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
+    url(./img/awesome.png);
 }
 
 .fifth-panel {
-  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(./img/leader_board.png);
+  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
+    url(./img/leader_board.png);
 }
 
 .sixth-panel {
-  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(./img/space.png);
+  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
+    url(./img/space.png);
 }
 
 .seventh-panel {
-  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(img/budgetpro.png);
+  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
+    url(img/budgetpro.png);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
@@ -910,7 +931,13 @@ body {
 }
 
 .p-primary-image {
-  width: 100%;
+  width: 90vh;
+  box-shadow: 4px 4px 10px #272422;
+  transition: transform 0.3s ease-in-out;
+}
+
+.p-primary-image:hover {
+  transform: scale(0.88888); /* Adjust the scale factor as needed */
 }
 
 .p-description-box {
