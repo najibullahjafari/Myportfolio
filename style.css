@@ -90,10 +90,11 @@
 
 .headline-intro {
   background-color: #1c1a19;
-  background-image: url('img/najib1.png');
+  background-image: url(img/najib1.png);
   background-repeat: no-repeat;
-  background-position: 10px -97%;
+  background-position: 219px 99%;
   padding: 0 1.2rem 6rem 1.2rem;
+  background-size: 50%;
 }
 
 .headline-h1 {
@@ -136,6 +137,7 @@
   justify-content: space-around;
   width: 45%;
   margin: 40px;
+  gap: 12px;
 }
 
 .social-icon a {
@@ -190,6 +192,15 @@
   align-items: flex-start;
   margin-left: 0;
   padding-left: 0;
+}
+
+.work-yoga-img {
+  box-shadow: 2px 2px 5px #272422;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.work-yoga-img:hover {
+  box-shadow: 4px 4px 10px #272422;
 }
 
 .work-first-lang {
@@ -287,7 +298,13 @@
 }
 
 .panel-container {
-  background-image: linear-gradient(179.4deg, rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.9) 84.03%), url(image/cardbackground.png);
+  background-image:
+    linear-gradient(
+      179.4deg,
+      rgba(38, 38, 38, 0) 0.81%,
+      rgba(38, 38, 38, 0.9) 84.03%
+    ),
+    url(image/cardbackground.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -318,7 +335,8 @@
   background-color: #1c1a19;
   background-image: url('image/illustration-about-me-mobile.png');
   background-repeat: no-repeat;
-  background-position: 100% 20rem;
+  background-position: 100% 18rem;
+  background-size: 30%;
 }
 
 .about-me-h2 {
@@ -327,6 +345,7 @@
   font-family: 'Crete Round', sans-serif;
   font-weight: normal;
   font-size: 4rem;
+  padding-bottom: 20px;
 }
 
 .about-me-summary-box {
@@ -356,6 +375,7 @@
   justify-content: center;
   text-decoration: none;
   border: none;
+  width: 100px;
 }
 
 .btn-resume:hover {
@@ -472,31 +492,45 @@ form {
 }
 
 .first-panel {
-  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(./img/bookstore.png);
+  background-image:
+    linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
+    url(./img/bookstore.png);
 }
 
 .second-panel {
-  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(./img/worldvista.png);
+  background-image:
+    linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
+    url(./img/worldvista.png);
 }
 
 .thirth-panel {
-  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(./img/legendary.png);
+  background-image:
+    linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
+    url(./img/legendary.png);
 }
 
 .fourth-panel {
-  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(./img/awesome.png);
+  background-image:
+    linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
+    url(./img/awesome.png);
 }
 
 .fifth-panel {
-  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(./img/leader_board.png);
+  background-image:
+    linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
+    url(./img/leader_board.png);
 }
 
 .sixth-panel {
-  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(./img/space.png);
+  background-image:
+    linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
+    url(./img/space.png);
 }
 
 .seventh-panel {
-  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%), url(img/budgetpro.png);
+  background-image:
+    linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
+    url(img/budgetpro.png);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
@@ -911,6 +945,12 @@ body {
 
 .p-primary-image {
   width: 100%;
+  box-shadow: 4px 4px 10px #272422;
+  transition: transform 0.3s ease-in-out;
+}
+
+.p-primary-image:hover {
+  transform: scale(0.88888); /* Adjust the scale factor as needed */
 }
 
 .p-description-box {
@@ -925,6 +965,7 @@ body {
   line-height: 2.4rem;
   font-weight: 400;
   color: #344563;
+  padding-top: 12px;
 }
 
 .p-button-box {

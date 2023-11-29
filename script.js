@@ -31,7 +31,6 @@ pCloseBtn.addEventListener('click', () => {
   body.classList.remove('hide-scroll');
 });
 
-
 // ========= Add cards dynamically  ==========
 
 function addhtml() {
@@ -131,7 +130,7 @@ const allProjectInfo = [
   {
     name: 'Space Traveller Hube',
     description: [
-      'This is a React and Redux website that displays a list of Rockets and Space Missions and allows you to book rockets and join selected space missions.This is a React and Redux website that displays a list of Rockets and Space Missions and allows you to book rockets and join selected space missions.'
+      'This is a React and Redux website that displays a list of Rockets and Space Missions and allows you to book rockets and join selected space missions.This is a React and Redux website that displays a list of Rockets and Space Missions and allows you to book rockets and join selected space missions.',
     ],
     imageSrc: './img/space.png',
     technologies: ['React', 'Redux', 'Bootstrap', 'CSS3'],
@@ -141,7 +140,7 @@ const allProjectInfo = [
   {
     name: 'BudgetPro',
     description: [
-      'BudgetPro is the Ruby on Rails capstone project is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent.'
+      'BudgetPro is the Ruby on Rails capstone project is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent.',
     ],
     imageSrc: 'img/budgetpro.png',
     technologies: ['Ruby', 'Rails', 'Bootstrap', 'CSS3'],
@@ -190,7 +189,7 @@ for (let i = 0; i < projectBtns.length; i += 1) {
     // Clear any existing content
     const popup = document.querySelector('.section-popup');
     popup.querySelector('.p-heading-primary').textContent = currentProject.name;
-    
+
     const techBox = popup.querySelector('.p-tech-box');
     techBox.innerHTML = ''; // Clear the existing technologies
     for (let k = 0; k < currentProject.technologies.length; k += 1) {
@@ -220,38 +219,37 @@ for (let i = 0; i < projectBtns.length; i += 1) {
   });
 }
 
-
-
 const btnpopup = document.querySelector('btn--popup');
 btnpopup.addEventListener('click', function () {
   window.open('https://najibullahjafari.github.io/');
 });
 // =============== save data ===================
 
-const nameInput = document.getElementById("firstname");
-const emailInput = document.getElementById("email");
-const textInput = document.querySelector("textarea");
+const nameInput = document.getElementById('firstname');
+const emailInput = document.getElementById('email');
+const textInput = document.querySelector('textarea');
 
 function saveToStorage() {
-    const saveData = {
-        name: nameInput.value,
-        email: emailInput.value,
-        text: textInput.value,
-    };
+  const saveData = {
+    name: nameInput.value,
+    email: emailInput.value,
+    text: textInput.value,
+  };
 
-    localStorage.setItem("contactFormData", JSON.stringify(saveData));
+  localStorage.setItem('contactFormData', JSON.stringify(saveData));
 }
 
-nameInput.addEventListener("input", saveToStorage);
-emailInput.addEventListener("input", saveToStorage);
-textInput.addEventListener("input", saveToStorage);
+nameInput.addEventListener('input', saveToStorage);
+emailInput.addEventListener('input', saveToStorage);
+textInput.addEventListener('input', saveToStorage);
 
-document.addEventListener("DOMContentLoaded", () => {
-    const dataSaved = localStorage.getItem("contactFormData");
-    if (dataSaved) {
-        const data = JSON.parse(dataSaved);
-        nameInput.value = data.name;
-        emailInput.value = data.email;
-        textInput.value = data.text;
-    }
+document.addEventListener('DOMContentLoaded', () => {
+  const dataSaved = localStorage.getItem('contactFormData');
+  if (dataSaved) {
+    const data = JSON.parse(dataSaved);
+    nameInput.value = data.name;
+    emailInput.value = data.email;
+    textInput.value = data.text;
+  }
 });
+/////////////// updae hover effects //////////////////
