@@ -90,10 +90,11 @@
 
 .headline-intro {
   background-color: #1c1a19;
-  background-image: url('img/najib1.png');
+  background-image: url(img/najib1.png);
   background-repeat: no-repeat;
-  background-position: 10px -97%;
+  background-position: 219px 99%;
   padding: 0 1.2rem 6rem 1.2rem;
+  background-size: 50%;
 }
 
 .headline-h1 {
@@ -136,6 +137,7 @@
   justify-content: space-around;
   width: 45%;
   margin: 40px;
+  gap: 12px;
 }
 
 .social-icon a {
@@ -332,7 +334,8 @@
   background-color: #1c1a19;
   background-image: url('image/illustration-about-me-mobile.png');
   background-repeat: no-repeat;
-  background-position: 100% 20rem;
+  background-position: 100% 18rem;
+  background-size: 30%;
 }
 
 .about-me-h2 {
@@ -341,6 +344,7 @@
   font-family: 'Crete Round', sans-serif;
   font-weight: normal;
   font-size: 4rem;
+  padding-bottom: 20px;
 }
 
 .about-me-summary-box {
@@ -370,6 +374,7 @@
   justify-content: center;
   text-decoration: none;
   border: none;
+  width: 100px;
 }
 
 .btn-resume:hover {
@@ -557,6 +562,13 @@ form {
     font-weight: 600;
     color: #fff;
     text-decoration: none;
+  }
+  .headline-intro {
+    background-color: #1c1a19;
+    background-image: url('img/najib1.png');
+    background-repeat: no-repeat;
+    background-position: 10px -97%;
+    padding: 0 1.2rem 6rem 1.2rem;
   }
 
   .menu {
@@ -931,7 +943,7 @@ body {
 }
 
 .p-primary-image {
-  width: 90vh;
+  width: 100%;
   box-shadow: 4px 4px 10px #272422;
   transition: transform 0.3s ease-in-out;
 }
@@ -952,6 +964,7 @@ body {
   line-height: 2.4rem;
   font-weight: 400;
   color: #344563;
+  padding-top: 12px;
 }
 
 .p-button-box {
