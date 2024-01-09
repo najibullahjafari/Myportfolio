@@ -73,17 +73,6 @@ const allProjectInfo = [
   },
   // Project 2
   {
-    name: 'Bookstore',
-    description: [
-      'Bookstore is a web application built with React and Redux that allows users to explore, categorize, and manage books. It features a user-friendly interface with options to add, edit, and remove books while tracking their reading progress',
-    ],
-    imageSrc: './img/bookstore.png',
-    technologies: ['React', 'Redux', 'Bootstrap', 'CSS3'],
-    liveDemo: 'https://64cd86e7739d9460c2d1d2c9--lucent-bavarois-61bf5d.netlify.app/',
-    sourceLink: 'https://github.com/najibullahjafari/bookstore',
-  },
-  // Project 3
-  {
     name: 'Worl Vista',
     description: [
       'World Vista, the JavaScript Capstone project, is an extensive and enlightening web application that serves as an invaluable resource for exploring information on approximately 250 countries around the world. This impressive project offers an in-depth look into the diverse cultures, economies, geographies, and demographics of nations spanning the globe',
@@ -93,29 +82,7 @@ const allProjectInfo = [
     liveDemo: 'https://gregarious-cupcake-5d65a2.netlify.app/',
     sourceLink: 'https://github.com/najibullahjafari/World-vistas',
   },
-  // Project 4
-  {
-    name: 'Legendary Portfolio',
-    description: [
-      'A visually captivating and interactive portfolio website. Built with HTML, CSS, and JavaScript, incorporating Bootstrap for enhanced styling. This project showcases your work, skills, and achievements in a sleek and memorable manner.',
-    ],
-    imageSrc: './img/legendary.png',
-    technologies: ['HTML', 'CSS', 'Bootstrap'],
-    liveDemo: 'https://tiny-donut-bb9f40.netlify.app/',
-    sourceLink: 'https://github.com/najibullahjafari/Legendary-portfolio-',
-  },
-  // Project 5
-  {
-    name: 'Awesome Book',
-    description: [
-      'An interactive web application for managing and organizing your favorite books. Developed using HTML, CSS, JavaScript, and Bootstrap. Features include adding and removing books, storing book details, and a user-friendly interface.',
-    ],
-    imageSrc: './img/awesomebook.png',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-    liveDemo: 'https://najibullahjafari.github.io/Awesome-books/',
-    sourceLink: 'https://github.com/najibullahjafari/Awesome-books',
-  },
-  // Project 6
+  // Project 3
   {
     name: 'Leaderboard',
     description: [
@@ -126,17 +93,8 @@ const allProjectInfo = [
     liveDemo: 'https://classy-cheesecake-b6b41b.netlify.app/',
     sourceLink: 'https://github.com/najibullahjafari/Leaderboard',
   },
-  // Project 7
-  {
-    name: 'Space Traveller Hube',
-    description: [
-      'This is a React and Redux website that displays a list of Rockets and Space Missions and allows you to book rockets and join selected space missions.This is a React and Redux website that displays a list of Rockets and Space Missions and allows you to book rockets and join selected space missions.',
-    ],
-    imageSrc: './img/space.png',
-    technologies: ['React', 'Redux', 'Bootstrap', 'CSS3'],
-    liveDemo: 'https://endearing-flan-d8189e.netlify.app/',
-    sourceLink: 'https://github.com/najibullahjafari/space-travelers-hub',
-  },
+  
+  // Project 4
   {
     name: 'BudgetPro',
     description: [
@@ -146,7 +104,7 @@ const allProjectInfo = [
     technologies: ['Ruby', 'Rails', 'Bootstrap', 'CSS3'],
     liveDemo: 'https://budget-8wcg.onrender.com/',
     sourceLink: 'https://github.com/najibullahjafari/BudgetPro',
-  },
+  }
 ];
 
 const projectBtns = document.querySelectorAll('.btn-project');
