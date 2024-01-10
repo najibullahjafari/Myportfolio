@@ -1,4 +1,6 @@
 /* Some public style */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,15 @@
   border: none;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
 }
 
 /* ========== Mobile hidden menu ========= */
@@ -117,12 +128,12 @@
     opacity: 0;
     transform: translateY(-20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
 
 .headline-description {
   color: white;
@@ -165,6 +176,7 @@
     opacity: 0;
     transform: translateX(-20px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -913,17 +925,6 @@ form {
 
 /* ****************************** POP UP STYLE ************************** */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  position: relative;
-}
-
 .section-popup {
   border-radius: 10px;
   height: 95vh;
@@ -978,10 +979,11 @@ body {
   width: 100%;
   box-shadow: 4px 4px 10px #272422;
   transition: transform 0.3s ease-in-out;
+  border-radius: 11px;
 }
 
 .p-primary-image:hover {
-  transform: scale(0.88888); /* Adjust the scale factor as needed */
+  transform: scale(0.99);
 }
 
 .p-description-box {
