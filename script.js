@@ -30,16 +30,22 @@ pCloseBtn.addEventListener('click', () => {
   overlay.classList.add('hidden');
   body.classList.remove('hide-scroll');
 });
+//============ Sticky navigation  ===============//
+document.addEventListener('DOMContentLoaded', function () {
+  const header = document.querySelector('.section-navbar');
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 50) {
+      header.classList.add('sticky');
+    } else {
+      header.classList.remove('sticky');
+    }
+  });
+});
 
 // ========= Add cards dynamically  ==========
 
 function addhtml() {
-  // var section = document.createElement('section');
-  // section.setAttribute('class', 'section-work');
-  // section.setAttribute('id', 'projectSection');
-  // var div = document.createElement('div');
-  // div.setAttribute('class', 'work-public-container');
-
   var dynamichtml = `
 
   `;
@@ -68,21 +74,10 @@ const allProjectInfo = [
     ],
     imageSrc: './img/mycrypto.png',
     technologies: ['React', 'Redux', 'Bootstrap', 'CSS3'],
-    liveDemo: 'https://64ddfa6f503d267147502fb8--tiny-sfogliatella-1f3791.netlify.app/',
+    liveDemo: 'https://tiny-sfogliatella-1f3791.netlify.app/',
     sourceLink: 'https://github.com/najibullahjafari/My-crypto',
   },
   // Project 2
-  {
-    name: 'Bookstore',
-    description: [
-      'Bookstore is a web application built with React and Redux that allows users to explore, categorize, and manage books. It features a user-friendly interface with options to add, edit, and remove books while tracking their reading progress',
-    ],
-    imageSrc: './img/bookstore.png',
-    technologies: ['React', 'Redux', 'Bootstrap', 'CSS3'],
-    liveDemo: 'https://64cd86e7739d9460c2d1d2c9--lucent-bavarois-61bf5d.netlify.app/',
-    sourceLink: 'https://github.com/najibullahjafari/bookstore',
-  },
-  // Project 3
   {
     name: 'Worl Vista',
     description: [
@@ -93,29 +88,7 @@ const allProjectInfo = [
     liveDemo: 'https://gregarious-cupcake-5d65a2.netlify.app/',
     sourceLink: 'https://github.com/najibullahjafari/World-vistas',
   },
-  // Project 4
-  {
-    name: 'Legendary Portfolio',
-    description: [
-      'A visually captivating and interactive portfolio website. Built with HTML, CSS, and JavaScript, incorporating Bootstrap for enhanced styling. This project showcases your work, skills, and achievements in a sleek and memorable manner.',
-    ],
-    imageSrc: './img/legendary.png',
-    technologies: ['HTML', 'CSS', 'Bootstrap'],
-    liveDemo: 'https://tiny-donut-bb9f40.netlify.app/',
-    sourceLink: 'https://github.com/najibullahjafari/Legendary-portfolio-',
-  },
-  // Project 5
-  {
-    name: 'Awesome Book',
-    description: [
-      'An interactive web application for managing and organizing your favorite books. Developed using HTML, CSS, JavaScript, and Bootstrap. Features include adding and removing books, storing book details, and a user-friendly interface.',
-    ],
-    imageSrc: './img/awesomebook.png',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-    liveDemo: 'https://najibullahjafari.github.io/Awesome-books/',
-    sourceLink: 'https://github.com/najibullahjafari/Awesome-books',
-  },
-  // Project 6
+  // Project 3
   {
     name: 'Leaderboard',
     description: [
@@ -126,17 +99,8 @@ const allProjectInfo = [
     liveDemo: 'https://classy-cheesecake-b6b41b.netlify.app/',
     sourceLink: 'https://github.com/najibullahjafari/Leaderboard',
   },
-  // Project 7
-  {
-    name: 'Space Traveller Hube',
-    description: [
-      'This is a React and Redux website that displays a list of Rockets and Space Missions and allows you to book rockets and join selected space missions.This is a React and Redux website that displays a list of Rockets and Space Missions and allows you to book rockets and join selected space missions.',
-    ],
-    imageSrc: './img/space.png',
-    technologies: ['React', 'Redux', 'Bootstrap', 'CSS3'],
-    liveDemo: 'https://endearing-flan-d8189e.netlify.app/',
-    sourceLink: 'https://github.com/najibullahjafari/space-travelers-hub',
-  },
+  
+  // Project 4
   {
     name: 'BudgetPro',
     description: [
@@ -146,45 +110,19 @@ const allProjectInfo = [
     technologies: ['Ruby', 'Rails', 'Bootstrap', 'CSS3'],
     liveDemo: 'https://budget-8wcg.onrender.com/',
     sourceLink: 'https://github.com/najibullahjafari/BudgetPro',
-  },
+  }
 ];
 
 const projectBtns = document.querySelectorAll('.btn-project');
 
 // ====================== VALIDATION ==============
 
-// document
-//     .getElementById("contact-form-container")
-//     .addEventListener("submit", function (e) {
-//         e.preventDefault();
-//         let emailInput = document.getElementById("email");
-//         let errormessege = document.getElementById("errormessage");
-//         if (emailInput.value.toLowerCase() != emailInput.value) {
-//             errormessege.textContent = "Email should be in lowercase!";
-//             if (!emailInput) {
-//                 console.log("the input form should not be empty");
-//             }
-//         } else {
-//             errormessege.textContent = " ";
-//             this.submit;
-//         }
-//     });
-
-/* ****************
- * POP UP VARIABLES *
- *************** */
-// const heading = document.querySelector('.p-heading-primary');
-// const techContainer = document.querySelector('.p-tech-box');
-// const tech = document.querySelector('.p-tech-item');
-// const descBox = document.querySelector('.p-description-box');
-// const description = document.querySelector('.p-description');
-
 /* ****************
  * EVENT LISTENERS *
- *************** */
-
+ **************/
 for (let i = 0; i < projectBtns.length; i += 1) {
   const currentProject = allProjectInfo[i];
+
   projectBtns[i].addEventListener('click', event => {
     // Clear any existing content
     const popup = document.querySelector('.section-popup');
@@ -208,7 +146,15 @@ for (let i = 0; i < projectBtns.length; i += 1) {
       descriptionBox.appendChild(curDesc);
     }
 
-    // Optionally, set the image source based on the current project
+    // Set the live demo link
+    const liveDemoLink = popup.querySelector('.p-live-demo');
+    liveDemoLink.href = currentProject.liveDemo;
+
+    // Set the source link
+    const sourceLink = popup.querySelector('.sourcelink');
+    sourceLink.href = currentProject.sourceLink;
+
+    // Set the image source based on the current project
     const primaryImage = popup.querySelector('.p-primary-image');
     primaryImage.src = currentProject.imageSrc;
 
@@ -219,10 +165,6 @@ for (let i = 0; i < projectBtns.length; i += 1) {
   });
 }
 
-const btnpopup = document.querySelector('btn--popup');
-btnpopup.addEventListener('click', function () {
-  window.open('https://najibullahjafari.github.io/');
-});
 // =============== save data ===================
 
 const nameInput = document.getElementById('firstname');
