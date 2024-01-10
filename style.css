@@ -63,6 +63,12 @@
 
 /* ============== Header part ========== */
 
+.section-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .navbar-con {
   background-color: #3c3a39;
   display: flex;
@@ -932,7 +938,7 @@ body {
   gap: 2rem;
   overflow-x: hidden;
   overflow-y: scroll;
-  z-index: 10;
+  z-index: 10001;
   background-color: #fff;
 }
 
