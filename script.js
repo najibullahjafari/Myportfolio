@@ -30,16 +30,22 @@ pCloseBtn.addEventListener('click', () => {
   overlay.classList.add('hidden');
   body.classList.remove('hide-scroll');
 });
+//============ Sticky navigation  ===============//
+document.addEventListener('DOMContentLoaded', function () {
+  const header = document.querySelector('.section-navbar');
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 50) {
+      header.classList.add('sticky');
+    } else {
+      header.classList.remove('sticky');
+    }
+  });
+});
 
 // ========= Add cards dynamically  ==========
 
 function addhtml() {
-  // var section = document.createElement('section');
-  // section.setAttribute('class', 'section-work');
-  // section.setAttribute('id', 'projectSection');
-  // var div = document.createElement('div');
-  // div.setAttribute('class', 'work-public-container');
-
   var dynamichtml = `
 
   `;
@@ -68,7 +74,7 @@ const allProjectInfo = [
     ],
     imageSrc: './img/mycrypto.png',
     technologies: ['React', 'Redux', 'Bootstrap', 'CSS3'],
-    liveDemo: 'https://64ddfa6f503d267147502fb8--tiny-sfogliatella-1f3791.netlify.app/',
+    liveDemo: 'https://tiny-sfogliatella-1f3791.netlify.app/',
     sourceLink: 'https://github.com/najibullahjafari/My-crypto',
   },
   // Project 2
@@ -111,38 +117,12 @@ const projectBtns = document.querySelectorAll('.btn-project');
 
 // ====================== VALIDATION ==============
 
-// document
-//     .getElementById("contact-form-container")
-//     .addEventListener("submit", function (e) {
-//         e.preventDefault();
-//         let emailInput = document.getElementById("email");
-//         let errormessege = document.getElementById("errormessage");
-//         if (emailInput.value.toLowerCase() != emailInput.value) {
-//             errormessege.textContent = "Email should be in lowercase!";
-//             if (!emailInput) {
-//                 console.log("the input form should not be empty");
-//             }
-//         } else {
-//             errormessege.textContent = " ";
-//             this.submit;
-//         }
-//     });
-
-/* ****************
- * POP UP VARIABLES *
- *************** */
-// const heading = document.querySelector('.p-heading-primary');
-// const techContainer = document.querySelector('.p-tech-box');
-// const tech = document.querySelector('.p-tech-item');
-// const descBox = document.querySelector('.p-description-box');
-// const description = document.querySelector('.p-description');
-
 /* ****************
  * EVENT LISTENERS *
- *************** */
-
+ **************/
 for (let i = 0; i < projectBtns.length; i += 1) {
   const currentProject = allProjectInfo[i];
+
   projectBtns[i].addEventListener('click', event => {
     // Clear any existing content
     const popup = document.querySelector('.section-popup');
@@ -166,7 +146,15 @@ for (let i = 0; i < projectBtns.length; i += 1) {
       descriptionBox.appendChild(curDesc);
     }
 
-    // Optionally, set the image source based on the current project
+    // Set the live demo link
+    const liveDemoLink = popup.querySelector('.p-live-demo');
+    liveDemoLink.href = currentProject.liveDemo;
+
+    // Set the source link
+    const sourceLink = popup.querySelector('.sourcelink');
+    sourceLink.href = currentProject.sourceLink;
+
+    // Set the image source based on the current project
     const primaryImage = popup.querySelector('.p-primary-image');
     primaryImage.src = currentProject.imageSrc;
 
@@ -177,10 +165,6 @@ for (let i = 0; i < projectBtns.length; i += 1) {
   });
 }
 
-const btnpopup = document.querySelector('btn--popup');
-btnpopup.addEventListener('click', function () {
-  window.open('https://najibullahjafari.github.io/');
-});
 // =============== save data ===================
 
 const nameInput = document.getElementById('firstname');
