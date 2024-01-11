@@ -68,7 +68,7 @@ In this project best coding practices is used.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Check out the live demo of this project [here](https://lucky-axolotl-6dc928.netlify.app/).
+Check out the live demo of this project [here](https://najibullahjafari.github.io/Myportfolio/).
 
 
 
