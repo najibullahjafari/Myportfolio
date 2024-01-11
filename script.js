@@ -70,7 +70,7 @@ const allProjectInfo = [
   {
     name: 'My Crypto',
     description: [
-      'My Crypto is a cutting-edge, responsive web application that provides real-time updates on the current prices of the most popular cryptocurrencies. Built with a blend of modern technologies, this dynamic platform harnesses the power of React and Redux, supported by CSS3 for sleek and intuitive design',
+      'My Crypto is a cutting-edge and responsive web application that offers real-time updates on the current prices of the most popular cryptocurrencies. Developed with a combination of modern technologies, this dynamic platform leverages the power of React and Redux, complemented by CSS3 for a sleek and intuitive design.',
     ],
     imageSrc: './img/mycrypto.png',
     technologies: ['React', 'Redux', 'Bootstrap', 'CSS3'],
@@ -81,7 +81,7 @@ const allProjectInfo = [
   {
     name: 'Worl Vista',
     description: [
-      'World Vista, the JavaScript Capstone project, is an extensive and enlightening web application that serves as an invaluable resource for exploring information on approximately 250 countries around the world. This impressive project offers an in-depth look into the diverse cultures, economies, geographies, and demographics of nations spanning the globe',
+      'World Vista, the JavaScript Capstone project, is an extensive and enlightening web application that serves as an invaluable resource for exploring information on approximately 250 countries around the world. This impressive project offers a comprehensive look into the diverse cultures, economies, geographies, and demographics of nations spanning the globe.',
     ],
     imageSrc: './img/worldvista.png',
     technologies: ['JavaScript', 'CSS', 'Bootstrap', 'Html'],
@@ -92,7 +92,7 @@ const allProjectInfo = [
   {
     name: 'Leaderboard',
     description: [
-      'Leaderboard is a a web page that will save your score and your name online, It is developed by HTML, CSS, JavaScript, Git flow, API.',
+      'Leaderboard is a web page that saves your score and name online. Developed using HTML, CSS, JavaScript, Git flow, and API, it provides a platform to store and display user scores.',
     ],
     imageSrc: './img/leader_board.png',
     technologies: ['HTML', 'CSS', 'Bootstrap', 'Ruby on Rails'],
@@ -104,7 +104,7 @@ const allProjectInfo = [
   {
     name: 'BudgetPro',
     description: [
-      'BudgetPro is the Ruby on Rails capstone project is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent.',
+      'BudgetPro, the Ruby on Rails capstone project, involves building a mobile web application for efficient budget management. Users can track transactions associated with specific categories to visualize their spending habits and monitor their budget.',
     ],
     imageSrc: 'img/budgetpro.png',
     technologies: ['Ruby', 'Rails', 'Bootstrap', 'CSS3'],

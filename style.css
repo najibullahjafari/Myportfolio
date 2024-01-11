@@ -13,6 +13,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -32,6 +33,10 @@ body {
 .hidden-item {
   border-bottom: thin solid gainsboro;
   padding: 0 0 1.5rem 1rem;
+}
+
+.hidden-item1 :hover {
+  color: hsl(22, 94%, 55%);
 }
 
 .hidden-item a {
@@ -185,6 +190,11 @@ body {
 
 .social-icon a {
   marker: none;
+}
+
+.social-icon li:hover {
+  transform: scale(1.2); /* Adjust the scale factor as needed */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
 
 /* Section project and works */
@@ -378,7 +388,7 @@ body {
   background-color: #1c1a19;
   background-image: url('image/illustration-about-me-mobile.png');
   background-repeat: no-repeat;
-  background-position: 100% 18rem;
+  background-position: 100% 22rem;
   background-size: 30%;
 }
 
@@ -523,6 +533,11 @@ form {
 
 .icon {
   fill: #505f79;
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Adjust the scale factor as needed */
+  transition: transform 0.3s ease;
 }
 
 .form-input {
@@ -807,6 +822,7 @@ form {
   .about-me-summary-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 1rem;
   }
 
   .about-me-description {
@@ -824,7 +840,7 @@ form {
   .section-about-me {
     background-image: url(image/largaboutme.png);
     background-repeat: no-repeat;
-    background-position: 100% 12rem;
+    background-position: 100% 32rem;
     background-size: 40rem;
     width: 100%;
     padding-bottom: 60px;
