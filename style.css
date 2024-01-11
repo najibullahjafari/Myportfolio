@@ -34,7 +34,8 @@ body {
   border-bottom: thin solid gainsboro;
   padding: 0 0 1.5rem 1rem;
 }
-.hidden-item1 :hover{
+
+.hidden-item1 :hover {
   color: hsl(22, 94%, 55%);
 }
 
@@ -534,7 +535,7 @@ form {
   fill: #505f79;
 }
 
-.icon:hover{
+.icon:hover {
   transform: scale(1.2); /* Adjust the scale factor as needed */
   transition: transform 0.3s ease;
 }
@@ -818,12 +819,6 @@ form {
     display: flex;
   }
 
-.about-me-summary-box {
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  border-bottom: 1px #fff solid;
- 
-}
   .about-me-summary-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
