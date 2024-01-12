@@ -32,14 +32,7 @@
 # 📖 [Myportfolio] <a name="about-project"></a>
 
 **[Portfolio_mobile-version]** is Microverse portfolio project.
-<img width="896" alt="Screenshot 2023-11-06 214851" src="https://github.com/najibullahjafari/Myportfolio/assets/121656832/b16d83df-2b94-48aa-840f-867cc33cb1e3">
-<img width="887" alt="Screenshot 2023-11-04 232216" src="https://github.com/najibullahjafari/Myportfolio/assets/121656832/da4739fb-e80d-4130-b975-65ee34114fe9">
-<img width="891" alt="Screenshot 2023-11-04 232226" src="https://github.com/najibullahjafari/Myportfolio/assets/121656832/40619799-8685-4cc4-b79c-7feb4e38172e">
-<img width="893" alt="Screenshot 2023-11-04 234001" src="https://github.com/najibullahjafari/Myportfolio/assets/121656832/4890445d-d7f8-4a29-bbf0-7022fe9768a0">
-<img width="892" alt="Screenshot 2023-11-04 233733" src="https://github.com/najibullahjafari/Myportfolio/assets/121656832/e876a61e-85f2-482e-bc52-891ef8150e23">
-<img width="887" alt="Screenshot 2023-11-04 232240" src="https://github.com/najibullahjafari/Myportfolio/assets/121656832/94cb7edd-d796-4a98-98d8-7a820f4ce303">
-<img width="895" alt="Screenshot 2023-11-04 232250" src="https://github.com/najibullahjafari/Myportfolio/assets/121656832/e33ece58-3dfd-4b93-85a2-4f2951fa24c7">
-<img width="898" alt="Screenshot 2023-11-04 232259" src="https://github.com/najibullahjafari/Myportfolio/assets/121656832/3f994dca-f7fd-4505-bea2-9388090f5a17">
+
 
 
 
