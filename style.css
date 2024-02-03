@@ -35,8 +35,8 @@ body {
   padding: 0 0 1.5rem 1rem;
 }
 
-.hidden-item :hover {
-  color:hsl(22, 94%, 55%)
+.hidden-item:hover {
+  color: hsl(22, 94%, 55%);
 }
 
 .hidden-item1 :hover {
