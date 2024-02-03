@@ -35,6 +35,10 @@ body {
   padding: 0 0 1.5rem 1rem;
 }
 
+.hidden-item :hover {
+  color:hsl(22, 94%, 55%)
+}
+
 .hidden-item1 :hover {
   color: hsl(22, 94%, 55%);
 }
@@ -579,7 +583,7 @@ form {
 .fifth-panel {
   background-image:
     linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
-    url(./img/leader_board.png);
+    url(./img/leader-board.png);
 }
 
 .sixth-panel {
