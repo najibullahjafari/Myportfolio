@@ -94,7 +94,7 @@ const allProjectInfo = [
     description: [
       'Leaderboard is a web page that saves your score and name online. Developed using HTML, CSS, JavaScript, Git flow, and API, it provides a platform to store and display user scores.',
     ],
-    imageSrc: './img/leader_board.png',
+    imageSrc: './img/leader-board.png',
     technologies: ['HTML', 'CSS', 'Bootstrap', 'Ruby on Rails'],
     liveDemo: 'https://classy-cheesecake-b6b41b.netlify.app/',
     sourceLink: 'https://github.com/najibullahjafari/Leaderboard',
@@ -108,7 +108,7 @@ const allProjectInfo = [
     ],
     imageSrc: 'img/budgetpro.png',
     technologies: ['Ruby', 'Rails', 'Bootstrap', 'CSS3'],
-    liveDemo: 'https://budget-8wcg.onrender.com/',
+    liveDemo: 'https://railsbudgetapp-3bf39d51a2ed.herokuapp.com',
     sourceLink: 'https://github.com/najibullahjafari/BudgetPro',
   }
 ];
