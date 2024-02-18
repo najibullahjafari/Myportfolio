@@ -101,8 +101,20 @@ body {
   align-content: center;
 }
 
+/* style and transition for log   */
+
 .logo {
-  padding-left: 30px;
+  position: absolute;
+  left: -100%;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: slideFromLeft 3s forwards;
+}
+
+@keyframes slideFromLeft {
+  to {
+      left: 40px;
+  }
 }
 
 .hidden-menu {
