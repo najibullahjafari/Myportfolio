@@ -746,9 +746,7 @@ form {
   .panel-container:hover h3,
   .panel-container:hover p,
   .panel-container:hover ul {
-    pointer-events: none;
-    display: none;
-    opacity: 1;
+    opacity: 0;
   }
 
   .panel-container:hover a {
