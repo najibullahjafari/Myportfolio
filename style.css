@@ -113,7 +113,7 @@ body {
 
 @keyframes slideFromLeft {
   to {
-      left: 40px;
+    left: 40px;
   }
 }
 
