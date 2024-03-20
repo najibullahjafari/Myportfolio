@@ -110,6 +110,18 @@ const allProjectInfo = [
     technologies: ['Ruby', 'Rails', 'Bootstrap', 'CSS3'],
     liveDemo: 'https://railsbudgetapp-3bf39d51a2ed.herokuapp.com',
     sourceLink: 'https://github.com/najibullahjafari/BudgetPro',
+  },
+  
+  // Project 4
+  {
+    name: 'Todo List',
+    description: [
+      'To-do list is a simple and effective tool used to organize tasks and manage time efficiently. It serves as a personal task manager, helping users keep track of their daily, weekly, or long-term tasks and goals.',
+    ],
+    imageSrc: 'img/todolist.png',
+    technologies: ['JavaScript', 'HTML', 'Bootstrap', 'CSS3'],
+    liveDemo: 'https://gleaming-rabanadas-7c9e4b.netlify.app/',
+    sourceLink: 'https://github.com/najibullahjafari/To-do-list',
   }
 ];
 
