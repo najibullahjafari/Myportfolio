@@ -111,6 +111,11 @@ body {
   animation: slideFromLeft 3s forwards;
 }
 
+.fa::before {
+  font-size: 20px;
+  color: #fff;
+}
+
 @keyframes slideFromLeft {
   to {
     left: 40px;
@@ -212,8 +217,9 @@ body {
 }
 
 .social-icon li:hover {
-  transform: scale(1.2); /* Adjust the scale factor as needed */
-  transition: transform 0.3s ease; /* Add a smooth transition effect */
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+  color: #f55800;
 }
 
 /* Section project and works */
@@ -294,11 +300,11 @@ body {
 
 .fa-comment::before {
   font-size: 17px;
-  color: #ff6b00;
+  color: #fff;
 }
 
 .fa-comment:hover::before {
-  color: #fff;
+  color: #ff6b00;
 }
 
 .work-genral-header {
@@ -629,6 +635,14 @@ form {
   color: white;
 }
 
+.eight-panel {
+  background-image:
+    linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
+    url(img/todolist.png);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
 .genral-panel {
   box-shadow: 1px 1px 3px #272422;
   background-size: cover;
@@ -822,7 +836,6 @@ form {
   .card-language-con {
     position: absolute;
     bottom: 1%;
-    left: 6%;
     padding-left: 12px;
   }
 
@@ -1021,7 +1034,7 @@ form {
 }
 
 .p-cross-btn:hover {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 50%;
   box-shadow: 1px 1px 2px #272422;
   transition: background-color 0.3s ease-in-out;
@@ -1054,8 +1067,6 @@ form {
 .p-primary-image:hover {
   transform: scale(0.99);
   transition: transform 0.3s ease-in-out;
-
-  
 }
 
 .p-description-box {
