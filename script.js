@@ -72,7 +72,7 @@ const allProjectInfo = [
     description: [
       'My Crypto is a cutting-edge and responsive web application that offers real-time updates on the current prices of the most popular cryptocurrencies. Developed with a combination of modern technologies, this dynamic platform leverages the power of React and Redux, complemented by CSS3 for a sleek and intuitive design.',
     ],
-    imageSrc: './img/mycrypto.png',
+    imageSrc: './img/mycrypto1.png',
     technologies: ['React', 'Redux', 'Bootstrap', 'CSS3'],
     liveDemo: 'https://tiny-sfogliatella-1f3791.netlify.app/',
     sourceLink: 'https://github.com/najibullahjafari/My-crypto',
