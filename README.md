@@ -31,7 +31,7 @@
 
 # 📖 [Myportfolio] <a name="about-project"></a>
 
-**[Portfolio_mobile-version]** is Microverse portfolio project.
+**[Portfolio_mobile-version]** A responsive portfolio website showcasing my projects and skills. Built with HTML, CSS, Bootstrap, and JavaScript. Features include a clean and modern design, project showcases, and contact information.
 
 
 
