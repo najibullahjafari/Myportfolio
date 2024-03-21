@@ -96,7 +96,7 @@ const allProjectInfo = [
     ],
     imageSrc: './img/leader-board.png',
     technologies: ['HTML', 'CSS', 'Bootstrap', 'Ruby on Rails'],
-    liveDemo: 'https://timely-genie-e9b1cc.netlify.app/',
+    liveDemo: 'https://najiblearderboard.netlify.app/',
     sourceLink: 'https://github.com/najibullahjafari/Leaderboard',
   },
   
