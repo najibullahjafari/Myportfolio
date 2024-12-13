@@ -66,6 +66,16 @@ window.addEventListener('load', addhtml);
 // ====================== cards objext ================
 
 const allProjectInfo = [
+  {
+    name: 'Afghanistan Tourism Portal',
+    description: [
+      'Afghanistan Tourism Portal which is developed is comprehensive web application. We considered many aspects of a tourism portal for example hotel, transport, tour guide and so on. The application is developed using Laravel and React.',
+    ],
+    imageSrc: './img/tourismportalimage/first.jpeg',
+    technologies: ['React', 'Laravel', 'Tailwind', 'CSS3'],
+    liveDemo: 'https://www.linkedin.com/in/najibullahjafari/details/projects/',
+    sourceLink: '#',
+  },
   // Project 1
   {
     name: 'My Crypto',
@@ -99,7 +109,7 @@ const allProjectInfo = [
     liveDemo: 'https://najiblearderboard.netlify.app/',
     sourceLink: 'https://github.com/najibullahjafari/Leaderboard',
   },
-  
+
   // Project 4
   {
     name: 'BudgetPro',
@@ -111,7 +121,7 @@ const allProjectInfo = [
     liveDemo: 'https://railsbudgetapp-3bf39d51a2ed.herokuapp.com',
     sourceLink: 'https://github.com/najibullahjafari/BudgetPro',
   },
-  
+
   // Project 4
   {
     name: 'Todo List',
@@ -122,7 +132,17 @@ const allProjectInfo = [
     technologies: ['JavaScript', 'HTML', 'Bootstrap', 'CSS3'],
     liveDemo: 'https://gleaming-rabanadas-7c9e4b.netlify.app/',
     sourceLink: 'https://github.com/najibullahjafari/To-do-list',
-  }
+  },
+  {
+    name: 'Gharb Online Store',
+    description: [
+      'Gharb Online Shopping is  a complete MIS system which customer can buy products, The admin can add new products, categories and etc..',
+    ],
+    imageSrc: 'img/onlinestoreimage/first.jpeg',
+    technologies: ['Laravel', 'JavaScript', 'Bootstrap', 'CSS3'],
+    liveDemo: '#',
+    sourceLink: '#',
+  },
 ];
 
 const projectBtns = document.querySelectorAll('.btn-project');
@@ -164,10 +184,32 @@ for (let i = 0; i < projectBtns.length; i += 1) {
 
     // Set the source link
     const sourceLink = popup.querySelector('.sourcelink');
-    sourceLink.href = currentProject.sourceLink;
+    if (currentProject.sourceLink) {
+      sourceLink.href = currentProject.sourceLink;
+      sourceLink.style.display = 'inline';
+    } else {
+      sourceLink.style.display = 'none';
+    }
 
     // Set the image source based on the current project
     const primaryImage = popup.querySelector('.p-primary-image');
+    if (Array.isArray(currentProject.imageSrc)) {
+      primaryImage.src = currentProject.imageSrc[0]; // Set the first image initially
+      const imageContainer = popup.querySelector('.p-image-container');
+      imageContainer.innerHTML = ''; // Clear existing images
+
+      currentProject.imageSrc.forEach((src, index) => {
+        if (index > 0) {
+          // Skip the first image as it's already set
+          const img = document.createElement('img');
+          img.className = 'p-secondary-image';
+          img.src = src;
+          imageContainer.appendChild(img);
+        }
+      });
+    } else {
+      primaryImage.src = currentProject.imageSrc;
+    }
     primaryImage.src = currentProject.imageSrc;
 
     event.preventDefault();
