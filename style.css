@@ -589,53 +589,39 @@ form {
   line-height: 1.5rem;
   border-bottom: 1px solid #dbd8d7;
 }
-
 .first-panel {
   background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
-    url(./img/mycrypto.png);
+    url(./img/tourismportalimage/first.jpeg);
 }
 
 .second-panel {
   background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
-    url(./img/worldvista.png);
+    url(./img/mycrypto.png);
 }
 
-.thirth-panel {
+.tirth-panel {
   background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
-    url(./img/legendary.png);
+    url(./img/worldvista.png);
 }
 
 .fourth-panel {
   background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
-    url(./img/awesome.png);
+    url(./img/leader-board.png);
 }
 
 .fifth-panel {
   background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
-    url(./img/leader-board.png);
+    url(./img/budgetpro.png);
 }
 
 .sixth-panel {
   background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
-    url(./img/space.png);
+    url(./img/todolist.png);
 }
 
 .seventh-panel {
   background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
-    url(img/budgetpro.png);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-}
-
-.eight-panel {
-  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
-    url(img/todolist.png);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-}
-.ninth-panel {
-  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
-    url(img/onlinestoreimage/first.jpeg);
+    url(./img/onlinestoreimage/first.jpeg);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
@@ -990,7 +976,7 @@ form {
   border-radius: 18px;
   height: 92vh;
   width: 92vw;
-  max-width: 700px;
+  max-width: 900px;
   max-height: 900px;
   position: fixed;
   top: 50%;

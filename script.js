@@ -67,6 +67,16 @@ window.addEventListener('load', addhtml);
 
 const allProjectInfo = [
   {
+    name: 'AWEC ERP',
+    description: [
+      'AWEC ERP is a comprehensive CMS web based application designed to provide all the necessary features for managing an organization. It includes modules for managing employees, departments, projects, and more. The application is developed using Laravel and Livewire.',
+    ],
+    imageSrc: './img/awec_project/1.jpg',
+    technologies: ['Livewire', 'Laravel', 'Tailwind', 'CSS3', 'MySQL', 'PHP', 'Alpine.js',],
+    liveDemo: 'https://awecis.info/',
+    sourceLink: '#',
+  },
+  {
     name: 'Afghanistan Tourism Portal',
     description: [
       'Afghanistan Tourism Portal which is developed is comprehensive web application. We considered many aspects of a tourism portal for example hotel, transport, tour guide and so on. The application is developed using Laravel and React.',
