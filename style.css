@@ -625,6 +625,10 @@ form {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
+.eighth-panel {
+  background-image: linear-gradient(179.4deg, rgba(121, 56, 3, 0.7) 0.81%, rgb(0 0 0 / 90%) 84.03%),
+    url(./img/dormitory_project/2.jpg);
+}
 
 .genral-panel {
   box-shadow: 1px 1px 3px #272422;

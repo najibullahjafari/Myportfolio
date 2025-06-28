@@ -153,6 +153,16 @@ const allProjectInfo = [
     liveDemo: '#',
     sourceLink: '#',
   },
+  {
+    name: 'Kabul University Dormitory',
+    description: [
+      'Kabul University Dormitory Project is a real world project that is developed to automate the process of selecting suitable student in Dormitory.',
+    ],
+    imageSrc: 'img/dormitory_project/1.jpg',
+    technologies: ['Laravel', 'Livewire', 'Tailwindcss', 'CSS3'],
+    liveDemo: '#',
+    sourceLink: '#',
+  },
 ];
 
 const projectBtns = document.querySelectorAll('.btn-project');
