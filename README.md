@@ -1,212 +1,86 @@
+# **Build your portfolio with Once UI's Magic Portfolio**
+
+View the [demo here](https://demo.magic-portfolio.com).
+
+![Magic Portfolio](public/images/cover.png)
 
 
-<div align="center">
-  <br/>
+# **Getting started**
 
-  <h3><b>Microverse Portfolio project</b></h3>
+Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
 
-</div>
-
-# 📗 Table of Contents
-
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
-
-# 📖 [Myportfolio] <a name="about-project"></a>
-
-**[My Portfolio]** is a responsive portfolio website showcasing my projects and skills. Built with HTML, CSS, Bootstrap, and JavaScript. Features include a clean and modern design, project showcases, and contact information.
-
-
-
-
-## 🛠 Built With <a name="built-with"></a>
-
-- HTML, 
-- CSS, 
-- GIT, 
-- GITHUB 
-- LINTERS
-
-### Tech Stack <a name="tech-stack"></a>
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://www.microverse.org/">HTML5</a></li>
-    <li><a href="https://www.microverse.org/">CSS3</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">VS CODE Live Server Extension</a></li>
-  </ul>
-</details>
-
-### Key Features <a name="key-features"></a>
-
-- **[Linters]**
-- **[Tirth project]**
-- **[Desktop version]**
-
-In this project best coding practices is used.
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-Check out the live demo of this project [here](https://najibullahjafari.github.io/Myportfolio/).
-
-
-
-## 💻 Getting Started <a name="getting-started"></a>
-
-To get a local copy up and running, follow these steps.
-
-1. Go to this URL link: [here](https://github.com/najibullahjafari/Myportfolio)
-2. clone the repo and start working on it.
-
-### Prerequisites
-
-In order to run this project you need:
-
-Google Chrome or other browser
-
-```sh
-  https://www.google.com/chrome/?brand=JJTC&gclid=CjwKCAjw9J2iBhBPEiwAErwpeSDcMFWiIQWj2u5GY6owZ7OaOHw7dYYCHW7uTR4kvYosNJYd4wt4VxoCiywQAvD_BwE&gclsrc=aw.ds
+**1. Clone the repository**
+```
+git clone https://github.com/once-ui-system/magic-portfolio.git
 ```
 
-Github Account:
-
-```sh
-  https://github.com/
+**2. Install dependencies**
+```
+npm install
 ```
 
-Npm installed:
-
-```sh
-  https://nodejs.org/en/download
+**3. Run dev server**
+```
+npm run dev
 ```
 
-Git installed:
-
-```sh
-  https://git-scm.com/downloads/
+**4. Edit config**
+```
+src/app/resources/config
 ```
 
-### Setup
-
-Clone this repository to your desired folder:
-
-```sh
-  cd my-folder
-  git clone https://github.com/najibullahjafari/Portfolio-Mobile_version.git
+**5. Edit content**
+```
+src/app/resources/content
 ```
 
-### Install
-
-Install this project with:
-
-Linters:
-
-Lighthouse run:
-
-```sh
-  npm install -g @lhci/cli@0.7.x
+**6. Create blog posts / projects**
+```
+Add a new .mdx file to src/app/blog/posts or src/app/work/projects
 ```
 
-Webhint run
+# **Features**
 
-```sh
- npm install --save-dev hint@7.x
-```
+## **Once UI**
+- All tokens, components & features of [Once UI](https://once-ui.com)
 
-StyleLint run:
+## **SEO**
+- Automatic open-graph and X image generation with next/og
+- Automatic schema and metadata generation based on the content file
 
-```sh
- npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-```
+## **Design**
+- Responsive layout optimized for all screen sizes
+- Timeless design without heavy animations and motion
+- Endless customization options through [data attributes](https://once-ui.com/docs/theming)
 
-### Usage
+## **Content**
+- Render sections conditionally based on the content file
+- Enable or disable pages for blog, work, gallery and about / CV
+- Generate and display social links automatically
+- Set up password protection for URLs
 
-To run the project, execute the following command:
+## **Localization**
+- A localized version of Magic Portfolio is available with the next-intl library
+- To use localization, switch to the 'i18n' branch
 
-Open the index.html in your browser
+# **Authors**
 
-### Run tests
+Connect with us on Threads or LinkedIn.
 
-To run tests, run the following command:
+Lorant Toth: [Threads](https://www.threads.net/@lorant.one), [LinkedIn](https://www.linkedin.com/in/tothlorant/)  
+Zsofia Komaromi: [Threads](https://www.threads.net/@zsofia_kom), [LinkedIn](https://www.linkedin.com/in/zsofiakomaromi/)
 
-to check for styling errors:
+Localization added by [François Hernandez](https://github.com/francoishernandez)
 
-```sh
-  npx stylelint "**/*.{css,scss}"
-```
+# **Get involved**
 
-### Deployment
+- Join the [Design Engineers Club on Discord](https://discord.com/invite/5EyAQ4eNdS) and share your portfolio with us!
+- Report a [bug](https://github.com/once-ui-system/magic-portfolio/issues/new?labels=bug&template=bug_report.md).
 
-You can deploy this project using:
+# **License**
 
-Your working browser.
+Distributed under the CC BY-NC 4.0 License.
+- Commercial usage is not allowed.
+- Attribution is required.
 
-## 👥 Authors <a name="authors"></a>
-
-👤 **Najibullah Jafari**
-
-- GitHub: [Najibullah_jafari](https://github.com/najibullahjafari)
-- Twitter: [Najibullah_jafari](https://twitter.com/Najib_Jafari_)
-- LinkedIn: [Najibullah_jafari](https://www.linkedin.com/in/najibulla-jafari-609852263/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-
-- **[Responsive Version]**
-
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/najibullahjafari/Myportfolio/issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## ⭐️ Show your support <a name="support"></a>
-
-Do you like this project? So don't wait to give one star!
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-
-I would like to thank Microverse!
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 📝 License <a name="license"></a>
-
-This project is [MIT](./MIT.md) licensed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+See `LICENSE.txt` for more information.
